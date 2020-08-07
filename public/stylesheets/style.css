@@ -1,8 +1,33 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: 'made_miragethin';
+  src: url('/fonts/made_mirage_thin-webfont.woff2') format('woff2'),
+       url('/fonts/made_mirage_thin-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-a {
-  color: #00B7FF;
+/* fonts */
+
+p {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
 }
+
+h1 {
+  font: 50px "made_miragethin", Georgia, serif;
+}
+
+h2 {
+  font: 20px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* colours */
+
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+}
+
+

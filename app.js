@@ -20,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/mywork', require('./routes/mywork'));
+app.use('/about', require('./routes/about'));
+app.use('/contact', require('./routes/contact'));
 app.engine('hbs', hbs({
   extname: 'hbs', 
   defaultLayout: 'layout', 
