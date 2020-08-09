@@ -29,6 +29,10 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 150; }
 
+h4 {
+  font: 30px "made_miragethin", Georgia, serif;
+  letter-spacing: 150; }
+
 /* || colours */
 body {
   color: #353532;
@@ -81,3 +85,40 @@ body {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .navigation li:last-of-type a {
       border-bottom: none; } }
+
+.footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  font-family: "degular";
+  font-size: 30px;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 30px; }
+  .footer ul li:last-of-type a {
+    border-right: solid 1px; }
+  .footer ul a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-left: solid 1px;
+    border-right: none;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    padding: 10px 40px 10px 40px; }
+
+.footer .designed-by {
+  font: 15px "wedding-gothic-atf";
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .footer .designed-by p {
+    border: solid 1px;
+    background-color: #e698c0;
+    font: inherit;
+    padding: 5px 40px; }
+
+.footer h4 {
+  padding-left: 80px; }

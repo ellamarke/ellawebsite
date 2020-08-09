@@ -15,6 +15,9 @@ $main-green: #9ace9f;
 $main-pink: #e698c0;
 $main-peach: #f79b83;
 
+$column-1-left-padding: 60px;
+$gutter: 20px;
+
 /* >>>SITE-WIDE<<< */
 
 /* || fonts */
@@ -46,6 +49,14 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 150;
 }
+
+h4 {
+  font: 30px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+}
+
+
+
 
 /* || colours */
 
@@ -133,5 +144,56 @@ body {
     li:last-of-type a {
       border-bottom: none;
     }
+  }
+}
+
+.footer {
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    list-style: none;
+    margin: 0;
+    font-family: "degular";
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 30px;
+
+    li:last-of-type a {
+      border-right: solid 1px;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      border-left: solid 1px;
+      border-right: none;
+      border-bottom: solid 1px;
+      border-top: solid 1px;
+      padding: 10px 40px 10px 40px;
+
+    }
+  }
+
+  .designed-by {
+    p {
+      border: solid 1px;
+      background-color: $main-pink;
+      font: inherit;
+      padding: 5px 40px;
+    }
+
+    font: 15px "wedding-gothic-atf";
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  h4 {
+    padding-left: $column-1-left-padding + $gutter;
   }
 }
