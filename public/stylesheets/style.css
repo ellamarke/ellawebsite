@@ -6,6 +6,12 @@
 
 /* >>>SITE-WIDE<<< */
 /* || fonts */
+.content {
+  border-right: solid 10px #e698c0; }
+
+.content-menu {
+  border-left: solid 10px #80bfc2; }
+
 p {
   font: 14px "degular", Helvetica, Arial, sans-serif; }
 
@@ -67,6 +73,24 @@ h4 {
 .seperator {
   border-left: 1px solid;
   height: 100px; }
+
+.picture-frame {
+  border: solid 1px;
+  padding: 20px;
+  box-sizing: border-box; }
+  .picture-frame img {
+    width: 100%; }
+
+.ten-col {
+  width: 83.33333%;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%; }
+
+.case-study {
+  background-color: #fff2eb;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: solid 1px; }
 
 /* || colours */
 body {

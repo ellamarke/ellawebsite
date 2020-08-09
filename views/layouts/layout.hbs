@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="https://use.typekit.net/rwq8aci.css">
-  </head>
-  <body>
-    <div>{{> header}}</div>
-    <div>{{{body}}}</div>
-    <div>{{> footer}}</div>
-  </body>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://use.typekit.net/rwq8aci.css">
+</head>
+
+<body>
+  <div>{{> header}}</div>
+  <div class="content-menu">
+    <div>{{> menu}}</div>
+    <div class="content">{{{body}}}</div>
+  </div>
+  <div>{{> footer}}</div>
+</body>
+
 </html>

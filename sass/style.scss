@@ -23,6 +23,15 @@ $gutter: 20px;
 
 /* || fonts */
 
+.content {
+  border-right: solid 10px $main-pink;
+}
+
+.content-menu {
+  border-left: solid 10px $main-blue;
+}
+
+
 p {
   font: 14px "degular", Helvetica, Arial, sans-serif;
 }
@@ -101,6 +110,29 @@ h4 {
 .seperator {
   border-left: 1px solid;
   height: 100px;
+}
+
+.picture-frame {
+  border: solid 1px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+  }
+}
+
+.ten-col {
+  width: 10/12*100%;
+  margin-left: 1/12*100%;
+  margin-right: 1/12*100%;
+}
+
+.case-study {
+  background-color: $main-off-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: solid 1px;
 }
 
 
