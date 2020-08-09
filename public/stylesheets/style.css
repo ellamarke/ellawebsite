@@ -8,7 +8,9 @@
 
 }
 
-/* fonts */
+/* >>>SITE-WIDE<<< */
+
+/* || fonts */
 
 p {
   font: 14px "degular", Helvetica, Arial, sans-serif;
@@ -23,7 +25,7 @@ h2 {
   text-transform: lowercase;
 }
 
-/* colours */
+/* || colours */
 
 body {
   color: #353532;
