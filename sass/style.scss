@@ -14,6 +14,7 @@ $main-blue: #80bfc2;
 $main-green: #9ace9f;
 $main-pink: #e698c0;
 $main-peach: #f79b83;
+$main-off-white: #fff2eb;
 
 $column-1-left-padding: 60px;
 $gutter: 20px;
@@ -27,7 +28,13 @@ p {
 }
 
 h1 {
-  font: 50px "made_miragethin", Georgia, serif;
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
 }
 
 h2,
@@ -51,11 +58,50 @@ h3 {
 }
 
 h4 {
-  font: 30px "made_miragethin", Georgia, serif;
+  font: 75px "made_miragethin", Georgia, serif;
   letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
+.project-table {
+  max-width: 80%;
+  border-collapse: collapse;
+
+  thead {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+  }
+
+  tbody {
+    font: 14px "degular", Helvetica, Arial, sans-serif;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 5px 20px;
+  }
+}
+
+.page-intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+
+  h1,
+  h3,
+  table,
+  .seperator {
+    align-self: center;
+  }
+}
+
+.seperator {
+  border-left: 1px solid;
+  height: 100px;
+}
 
 
 /* || colours */
@@ -148,6 +194,8 @@ body {
 }
 
 .footer {
+  border-top: solid 1px;
+
   ul {
     display: flex;
     flex-flow: row wrap;
