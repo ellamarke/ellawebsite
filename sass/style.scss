@@ -1,41 +1,137 @@
 @font-face {
-    font-family: 'made_miragethin';
-    src: url('/fonts/made_mirage_thin-webfont.woff2') format('woff2'),
-         url('/fonts/made_mirage_thin-webfont.woff') format('woff');
-  
-    font-weight: normal;
-    font-style: normal;
-  
+  font-family: 'made_miragethin';
+  src: url('/fonts/made_mirage_thin-webfont.woff2') format('woff2'),
+    url('/fonts/made_mirage_thin-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$main-background-color: #ebd5c4;
+$main-text-color: #353532;
+$main-blue: #80bfc2;
+$main-green: #9ace9f;
+$main-pink: #e698c0;
+$main-peach: #f79b83;
+
+/* >>>SITE-WIDE<<< */
+
+/* || fonts */
+
+p {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font: 50px "made_miragethin", Georgia, serif;
+}
+
+h2,
+.ticker-tape {
+  font: 20px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+.ticker-tape {
+  white-space: nowrap;
+  border-bottom: solid 1px $main-text-color;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 150;
+}
+
+/* || colours */
+
+body {
+  color: $main-text-color;
+  background-color: $main-background-color;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  font-family: "degular";
+  font-size: 20px;
+  font-weight: 200;
+  font-style: normal;
+
+  li:last-of-type a {
+    border-right: solid 1px;
   }
 
-  $main-background-color: #ebd5c4;
-  $main-text-color: #353532;
-  
-  /* >>>SITE-WIDE<<< */
-  
-  /* || fonts */
-  
-  p {
-    font: 14px "degular", Helvetica, Arial, sans-serif;
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-left: solid 1px;
+    border-right: none;
+    border-bottom: solid 1px;
+    padding: 10px 40px 10px 40px;
+
   }
-  
-  h1 {
-    font: 50px "made_miragethin", Georgia, serif;
+
+  .menu-home {
+    a:hover {
+      background: $main-blue;
+    }
   }
-  
-  h2 {
-    font: 20px "wedding-gothic-atf";
-    text-transform: lowercase;
+
+  .menu-work {
+    a:hover {
+      background: $main-pink;
+    }
   }
-  
-  /* || colours */
-  
-  body {
+
+  .menu-about {
+    a:hover {
+      background: $main-green;
+    }
+  }
+
+  .menu-contact {
+    a:hover {
+      background: $main-peach;
+    }
+  }
+
+  a:visited {
     color: $main-text-color;
-    background-color: $main-background-color;
   }
+}
 
 
-  
-  
-  
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+
+    a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+}

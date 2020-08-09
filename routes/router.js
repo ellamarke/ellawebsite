@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Ella', currentTime: Date() })
 })
 
-router.get('/mywork', function(req, res, next) {
-  res.render('mywork')
+router.get('/work', function(req, res, next) {
+  res.render('work')
 })
 
 router.get('/about', function(req, res, next) {
