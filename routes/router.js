@@ -22,4 +22,8 @@ router.get('/food-of-paradise', function(req, res, next) {
   res.render('food-of-paradise')
 })
 
+router.get('/grid-test', function(req, res, next) {
+  res.render('grid-test')
+})
+
 module.exports = router

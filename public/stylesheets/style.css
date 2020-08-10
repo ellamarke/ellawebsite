@@ -4,14 +4,16 @@
   font-weight: normal;
   font-style: normal; }
 
-/* >>>SITE-WIDE<<< */
-/* || fonts */
+/* || colour variables */
+/* flexbox grid */
+/* main colour borders */
 .content {
   border-right: solid 10px #e698c0; }
 
 .content-menu {
   border-left: solid 10px #80bfc2; }
 
+/* || fonts */
 p {
   font: 14px "degular", Helvetica, Arial, sans-serif; }
 
@@ -29,13 +31,6 @@ h2,
   font: 20px "wedding-gothic-atf";
   text-transform: lowercase; }
 
-.ticker-tape {
-  white-space: nowrap;
-  border-bottom: solid 1px #353532;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-  overflow: hidden; }
-
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
@@ -47,6 +42,20 @@ h4 {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/* ticker tape */
+.ticker-tape {
+  white-space: nowrap;
+  border-bottom: solid 1px #353532;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  overflow: hidden; }
+
+/* project table */
 .project-table {
   max-width: 80%;
   border-collapse: collapse; }
@@ -59,6 +68,20 @@ h4 {
     border: 1px solid;
     padding: 5px 20px; }
 
+/* caption table */
+.caption-table {
+  max-width: 80%;
+  border-collapse: collapse; }
+  .caption-table thead {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf"; }
+  .caption-table tbody {
+    font: 14px "degular", Helvetica, Arial, sans-serif; }
+  .caption-table td {
+    border: 1px solid;
+    padding: 5px 20px; }
+
+/* page intro */
 .page-intro {
   display: flex;
   justify-content: center;
@@ -74,17 +97,33 @@ h4 {
   border-left: 1px solid;
   height: 100px; }
 
+/* images */
 .picture-frame {
   border: solid 1px;
-  padding: 20px;
+  padding: 0.5em;
   box-sizing: border-box; }
   .picture-frame img {
     width: 100%; }
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif; }
 
 .ten-col {
   width: 83.33333%;
   margin-left: 8.33333%;
   margin-right: 8.33333%; }
+
+/* case-study */
+.go-back {
+  font: 15px "wedding-gothic-atf";
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .go-back p {
+    border: solid 1px;
+    background-color: #f79b83;
+    font: inherit;
+    padding: 5px 40px; }
 
 .case-study {
   background-color: #fff2eb;
@@ -145,6 +184,7 @@ body {
     .navigation li:last-of-type a {
       border-bottom: none; } }
 
+/* footer */
 .footer {
   border-top: solid 1px; }
   .footer ul {
@@ -181,3 +221,12 @@ body {
       padding: 5px 40px; }
   .footer h4 {
     padding-left: 80px; }
+
+/* Grid Test */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em; }
+
+.wrapper > div {
+  border: 1px; }

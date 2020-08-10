@@ -8,6 +8,8 @@
 
 }
 
+/* || colour variables */
+
 $main-background-color: #ebd5c4;
 $main-text-color: #353532;
 $main-blue: #80bfc2;
@@ -16,12 +18,14 @@ $main-pink: #e698c0;
 $main-peach: #f79b83;
 $main-off-white: #fff2eb;
 
+
+/* flexbox grid */
+
 $column-1-left-padding: 60px;
 $gutter: 20px;
 
-/* >>>SITE-WIDE<<< */
 
-/* || fonts */
+/* main colour borders */
 
 .content {
   border-right: solid 10px $main-pink;
@@ -31,6 +35,8 @@ $gutter: 20px;
   border-left: solid 10px $main-blue;
 }
 
+
+/* || fonts */
 
 p {
   font: 14px "degular", Helvetica, Arial, sans-serif;
@@ -52,14 +58,6 @@ h2,
   text-transform: lowercase;
 }
 
-.ticker-tape {
-  white-space: nowrap;
-  border-bottom: solid 1px $main-text-color;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-  overflow: hidden;
-}
-
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
@@ -73,6 +71,26 @@ h4 {
   margin-bottom: 10px;
 }
 
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* ticker tape */
+
+.ticker-tape {
+  white-space: nowrap;
+  border-bottom: solid 1px $main-text-color;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+
+/* project table */
 
 .project-table {
   max-width: 80%;
@@ -93,6 +111,30 @@ h4 {
   }
 }
 
+/* caption table */
+
+.caption-table {
+  max-width: 80%;
+  border-collapse: collapse;
+
+  thead {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+  }
+
+  tbody {
+    font: 14px "degular", Helvetica, Arial, sans-serif;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 5px 20px;
+  }
+}
+
+
+/* page intro */
+
 .page-intro {
   display: flex;
   justify-content: center;
@@ -112,9 +154,12 @@ h4 {
   height: 100px;
 }
 
+
+/* images */
+
 .picture-frame {
   border: solid 1px;
-  padding: 20px;
+  padding: 0.5em;
   box-sizing: border-box;
 
   img {
@@ -122,10 +167,32 @@ h4 {
   }
 }
 
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+}
+
+
 .ten-col {
   width: 10/12*100%;
   margin-left: 1/12*100%;
   margin-right: 1/12*100%;
+}
+
+/* case-study */
+
+.go-back {
+  p {
+    border: solid 1px;
+    background-color: $main-peach;
+    font: inherit;
+    padding: 5px 40px;
+  }
+
+  font: 15px "wedding-gothic-atf";
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .case-study {
@@ -225,6 +292,9 @@ body {
   }
 }
 
+
+/* footer */
+
 .footer {
   border-top: solid 1px;
 
@@ -276,4 +346,19 @@ body {
   h4 {
     padding-left: $column-1-left-padding + $gutter;
   }
+}
+
+
+
+
+/* Grid Test */
+
+.wrapper {
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-gap:1em;
+}
+
+.wrapper>div {
+  border:1px
 }
