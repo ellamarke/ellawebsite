@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url('/fonts/made_mirage_thin-webfont.woff2') format('woff2'),
+    url('/fonts/made_mirage_thin-webfont.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* || colour variables */
+
+$main-background-color: #ebd5c4;
+$main-text-color: #353532;
+$main-blue: #80bfc2;
+$main-green: #9ace9f;
+$main-pink: #e698c0;
+$main-peach: #f79b83;
+$main-off-white: #fff2eb;
+
+
+/* main colour borders */
+
+.content {
+  border-right: solid 10px $main-pink;
+}
+
+.content-menu {
+  border-left: solid 10px $main-blue;
+}
+
+
+/* || fonts */
+
+p {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+h2,
+.ticker-tape {
+  font: 20px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 150;
+}
+
+h4 {
+  font: 75px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* ticker tape */
+
+.ticker-tape {
+  white-space: nowrap;
+  border-bottom: solid 1px $main-text-color;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+
+/* project table */
+
+.project-table {
+  max-width: 80%;
+  border-collapse: collapse;
+
+  thead {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+  }
+
+  tbody {
+    font: 14px "degular", Helvetica, Arial, sans-serif;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 5px 20px;
+  }
+}
+
+/* caption table */
+
+.caption-table {
+  max-width: 80%;
+  border-collapse: collapse;
+
+  thead {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+  }
+
+  tbody {
+    font: 14px "degular", Helvetica, Arial, sans-serif;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 5px 20px;
+  }
+}
+
+
+/* page intro */
+
+.page-intro {
+  padding-bottom: 60px;
+
+  h1,
+  h3,
+  table,
+  .seperator {
+    align-self: center;
+  }
+}
+
+.seperator {
+  border-left: 1px solid;
+  height: 100px;
+}
+
+
+/* images */
+
+.picture-frame {
+  border: solid 1px;
+  padding: 0.5em;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+  }
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+}
+
+
+/* case-study */
+
+.go-back {
+  p {
+    border: solid 1px;
+    background-color: $main-peach;
+    font: inherit;
+    padding: 5px 40px;
+  }
+
+  font: 15px "wedding-gothic-atf";
+}
+
+.case-study {
+  background-color: $main-off-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: solid 1px;
+}
+
+
+/* || colours */
+
+body {
+  color: $main-text-color;
+  background-color: $main-background-color;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  font-family: "degular";
+  font-size: 20px;
+  font-weight: 200;
+  font-style: normal;
+
+  li:last-of-type a {
+    border-right: solid 1px;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-left: solid 1px;
+    border-right: none;
+    border-bottom: solid 1px;
+    padding: 10px 40px 10px 40px;
+
+  }
+
+  .menu-home {
+    a:hover {
+      background: $main-blue;
+    }
+  }
+
+  .menu-work {
+    a:hover {
+      background: $main-pink;
+    }
+  }
+
+  .menu-about {
+    a:hover {
+      background: $main-green;
+    }
+  }
+
+  .menu-contact {
+    a:hover {
+      background: $main-peach;
+    }
+  }
+
+  a:visited {
+    color: $main-text-color;
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+
+    a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+}
+
+
+/* footer */
+
+.footer {
+  border-top: solid 1px;
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    list-style: none;
+    margin: 0;
+    font-family: "degular";
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 30px;
+
+    li:last-of-type a {
+      border-right: solid 1px;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      border-left: solid 1px;
+      border-right: none;
+      border-bottom: solid 1px;
+      border-top: solid 1px;
+      padding: 10px 40px 10px 40px;
+
+    }
+  }
+
+  .designed-by {
+    p {
+      border: solid 1px;
+      background-color: $main-pink;
+      font: inherit;
+      padding: 5px 40px;
+    }
+
+    font: 15px "wedding-gothic-atf";
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  h4 {
+    padding-left: $column-1-left-padding + $gutter;
+  }
+}
+
+
+/* Grid Test */
+
+.wrapper {
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-gap:1em;
+}
+
+.wrapper>div {
+  border:1px
+}
