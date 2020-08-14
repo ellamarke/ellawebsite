@@ -74,7 +74,8 @@ h5 {
   border-collapse: collapse; }
   .caption-table thead {
     text-transform: uppercase;
-    font: 14px "wedding-gothic-atf"; }
+    font: 14px "wedding-gothic-atf";
+    border: 1px solid; }
   .caption-table tbody {
     font: 14px "degular", Helvetica, Arial, sans-serif; }
   .caption-table td {
