@@ -20,7 +20,7 @@ body {
 
 /* || fonts */
 p {
-  font: 14px "degular", Helvetica, Arial, sans-serif;
+  font: 18px "degular", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
 h1 {
@@ -40,7 +40,7 @@ h2,
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
-  letter-spacing: 150; }
+  letter-spacing: 1px; }
 
 h4 {
   font: 50px "made_miragethin", Georgia, serif;
@@ -62,7 +62,8 @@ h5 {
   border-bottom: solid 1px #353532;
   padding-bottom: 10px;
   margin-bottom: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 10px; }
 
 /* project table */
 .project-table {
@@ -72,18 +73,23 @@ h5 {
     text-transform: uppercase;
     font: 14px "wedding-gothic-atf"; }
   .project-table tbody {
-    font: 14px "degular", Helvetica, Arial, sans-serif; }
+    font: 18px "degular", Helvetica, Arial, sans-serif; }
   .project-table td {
     border: 1px solid;
-    padding: 5px 20px; }
+    padding: 10px 20px; }
 
 /* caption table */
 .caption-table {
   max-width: 80%;
   border-collapse: collapse; }
-  .caption-table thead {
+  .caption-table .main-head {
     text-transform: uppercase;
-    font: 18px "wedding-gothic-atf";
+    font: 25px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid; }
+  .caption-table .number-head {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
     border: 1px solid; }
   .caption-table tbody {
     font: 18px "degular", Helvetica, Arial, sans-serif;
@@ -91,7 +97,7 @@ h5 {
   .caption-table td,
   .caption-table th {
     border: 1px solid;
-    padding: 5px 20px; }
+    padding: 10px 20px; }
 
 /* page intro */
 .page-intro {
@@ -99,7 +105,8 @@ h5 {
   .page-intro h1,
   .page-intro h3,
   .page-intro table,
-  .page-intro .seperator {
+  .page-intro .subheading,
+  .page-intro .title-seperator {
     align-self: center; }
 
 .seperator {
@@ -115,7 +122,8 @@ h5 {
     width: 100%; }
 
 figcaption {
-  font: 14px "degular", Helvetica, Arial, sans-serif; }
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px; }
 
 /* || case-study */
 .case-study {
@@ -220,7 +228,7 @@ figcaption {
 .case-study {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10em 1em;
+  grid-gap: 5em 1em;
   grid-template-rows: auto; }
 
 .img-1 {
@@ -260,8 +268,8 @@ figcaption {
 
 .img-2 {
   grid-row-start: 4;
-  grid-column-start: 2;
-  grid-column-end: 6; }
+  grid-column-start: 3;
+  grid-column-end: 7; }
 
 .img-3 {
   grid-row-start: 4;
@@ -287,7 +295,8 @@ figcaption {
 .img-6 {
   grid-row-start: 7;
   grid-column-start: 6;
-  grid-column-end: 11; }
+  grid-column-end: 11;
+  margin-top: 200px; }
 
 .thanks {
   grid-row-start: 8;
