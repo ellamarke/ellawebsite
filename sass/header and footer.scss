@@ -1,0 +1,152 @@
+
+/* ticker tape */
+
+.ticker-tape {
+  white-space: nowrap;
+  border-bottom: solid 1px $main-text-color;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+
+
+/* || header */
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  font-family: "degular";
+  font-size: 20px;
+  font-weight: 200;
+  font-style: normal;
+
+  li:last-of-type a {
+    border-right: solid 1px;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-left: solid 1px;
+    border-right: none;
+    border-bottom: solid 1px;
+    padding: 10px 40px 10px 40px;
+
+  }
+
+  .menu-home {
+    a:hover {
+      background: $main-blue;
+    }
+  }
+
+  .menu-work {
+    a:hover {
+      background: $main-pink;
+    }
+  }
+
+  .menu-about {
+    a:hover {
+      background: $main-green;
+    }
+  }
+
+  .menu-contact {
+    a:hover {
+      background: $main-peach;
+    }
+  }
+
+  a:visited {
+    color: $main-text-color;
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+
+    a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+}
+
+
+/* footer */
+
+.footer {
+  border-top: solid 1px;
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    list-style: none;
+    margin: 0;
+    font-family: "degular";
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 30px;
+
+    li:last-of-type a {
+      border-right: solid 1px;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      border-left: solid 1px;
+      border-right: none;
+      border-bottom: solid 1px;
+      border-top: solid 1px;
+      padding: 10px 40px 10px 40px;
+    }
+    .lets-talk {
+      text-align: left;
+    }
+  }
+
+  .designed-by {
+    p {
+      border: solid 1px;
+      background-color: $main-pink;
+      font: inherit;
+      padding: 5px 40px;
+    }
+
+    font: 15px "wedding-gothic-atf";
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+
+}
