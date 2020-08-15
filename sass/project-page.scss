@@ -1,0 +1,212 @@
+
+/* project table */
+
+.project-table {
+  max-width: 80%;
+  border-collapse: collapse;
+
+  thead {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+  }
+
+  tbody {
+    font: 18px "degular", Helvetica, Arial, sans-serif;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 10px 20px;
+  }
+}
+
+/* caption table */
+
+.caption-table {
+  max-width: 80%;
+  border-collapse: collapse;
+
+  .main-head {
+    text-transform: uppercase;
+    font: 25px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid;
+  }
+
+  .number-head {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+    border: 1px solid;
+  }
+
+  tbody {
+    font: 18px "degular", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  td,
+  th {
+    border: 1px solid;
+    padding: 10px 20px;
+  }
+
+}
+
+
+/* page intro */
+
+.page-intro {
+  padding-bottom: 60px;
+
+  h1,
+  h3,
+  table,
+  .subheading,
+  .title-seperator {
+    align-self: center;
+  }
+}
+
+.seperator {
+  border-left: 1px solid;
+  height: 100px;
+}
+
+
+/* images */
+
+.picture-frame {
+  border: solid 1px;
+  padding: 0.5em;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+  }
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+
+/* || case-study */
+
+.case-study {
+  background-color: $main-off-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: solid 1px;
+}
+
+.go-back {
+  p {
+    border: solid 1px;
+    background-color: $main-peach;
+    font: inherit;
+    padding: 5px;
+  }
+
+  font: 20px "wedding-gothic-atf";
+}
+
+
+/* Grid Test */
+
+.case-study {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5em 1em;
+  grid-template-rows: auto;
+}
+
+
+.img-1 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.double-caption {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+
+/*
+.caption-1 {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+
+
+.seperator-1 {
+  grid-row-start: 3;
+  grid-column-start: 7;
+
+}
+
+.caption-2 {
+  grid-row-start: 4;
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+*/
+.quote-1 {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.img-2 {
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.img-3 {
+  grid-row-start: 4;
+  grid-column-start: 8;
+  grid-column-end: 11;
+  margin-top: 400px;
+}
+
+.caption-3 {
+  grid-row-start: 5;
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+
+.img-4 {
+  grid-row-start: 6;
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.img-5 {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.img-6 {
+  grid-row-start: 7;
+  grid-column-start: 6;
+  grid-column-end: 11;
+  margin-top: 200px;
+}
+
+.thanks {
+  grid-row-start: 8;
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.go-back {
+  grid-row-start: 9;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  text-align: center;
+}
