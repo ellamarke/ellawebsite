@@ -227,18 +227,20 @@ figcaption {
   font: 20px "wedding-gothic-atf";
 }
 
+
 /* || header */
 
 .navigation {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  padding-inline-start: 0px;
 
   list-style: none;
   margin: 0;
   font-family: "degular";
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
   font-style: normal;
 
   li:last-of-type a {
@@ -286,27 +288,24 @@ figcaption {
 }
 
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
 @media all and (max-width: 600px) {
   .navigation {
-    flex-flow: column wrap;
-    padding: 0;
+    flex-flow: nowrap;
+    li {
+      flex: 1 auto;
 
-    a {
-      text-align: center;
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      a {
+        padding: 10px 0;
+        text-align: center;
+      }
     }
+  }
 
-    li:last-of-type a {
-      border-bottom: none;
-    }
+  .content {
+    border-left: solid 10px $main-blue;
+  }
+  .content-menu {
+    border-left: none;
   }
 }
 
@@ -354,9 +353,28 @@ figcaption {
       border-bottom: solid 1px;
       border-top: solid 1px;
       padding: 10px 40px 10px 40px;
+      color: $main-text-color;
     }
     .lets-talk {
       text-align: left;
+    }
+
+    .mail {
+      a:hover {
+        background: $main-blue;
+      }
+    }
+  
+    .instagram {
+      a:hover {
+        background: $main-peach;
+      }
+    }
+  
+    .linkedin {
+      a:hover {
+        background: $main-green;
+      }
     }
   }
 
@@ -365,7 +383,7 @@ figcaption {
       border: solid 1px;
       background-color: $main-pink;
       font: inherit;
-      padding: 5px 40px;
+      padding: 5px 30px;
       margin-bottom: 40px;
     }
 
@@ -517,7 +535,7 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 .go-back {
   align-self: center;
   p {
-    padding: 5px 60px;
+    padding: 5px 30px;
   }
 }
 

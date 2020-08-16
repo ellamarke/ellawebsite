@@ -158,11 +158,12 @@ figcaption {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  padding-inline-start: 0px;
   list-style: none;
   margin: 0;
   font-family: "degular";
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
   font-style: normal; }
   .navigation li:last-of-type a {
     border-right: solid 1px; }
@@ -185,21 +186,18 @@ figcaption {
   .navigation a:visited {
     color: #353532; }
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around; } }
-
 @media all and (max-width: 600px) {
   .navigation {
-    flex-flow: column wrap;
-    padding: 0; }
-    .navigation a {
-      text-align: center;
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .navigation li:last-of-type a {
-      border-bottom: none; } }
+    flex-flow: nowrap; }
+    .navigation li {
+      flex: 1 auto; }
+      .navigation li a {
+        padding: 10px 0;
+        text-align: center; }
+  .content {
+    border-left: solid 10px #80bfc2; }
+  .content-menu {
+    border-left: none; } }
 
 /* footer */
 .footer {
@@ -233,9 +231,16 @@ figcaption {
       border-right: none;
       border-bottom: solid 1px;
       border-top: solid 1px;
-      padding: 10px 40px 10px 40px; }
+      padding: 10px 40px 10px 40px;
+      color: #353532; }
     .footer ul .lets-talk {
       text-align: left; }
+    .footer ul .mail a:hover {
+      background: #80bfc2; }
+    .footer ul .instagram a:hover {
+      background: #f79b83; }
+    .footer ul .linkedin a:hover {
+      background: #9ace9f; }
   .footer .designed-by {
     font: 15px "wedding-gothic-atf";
     display: flex;
@@ -245,7 +250,7 @@ figcaption {
       border: solid 1px;
       background-color: #e698c0;
       font: inherit;
-      padding: 5px 40px;
+      padding: 5px 30px;
       margin-bottom: 40px; }
 
 /* Grid Test */
@@ -358,7 +363,7 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 .go-back {
   align-self: center; }
   .go-back p {
-    padding: 5px 60px; }
+    padding: 5px 30px; }
 
 /*
 .thanks {
