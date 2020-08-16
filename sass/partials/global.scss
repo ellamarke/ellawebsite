@@ -1,0 +1,99 @@
+@import 'colours-fonts.scss';
+
+/* main colour borders */
+
+.content {
+  border-right: solid 10px $main-pink;
+}
+
+.content-menu {
+  border-left: solid 10px $main-blue;
+}
+
+
+/* caption table */
+
+.caption-table {
+  border-collapse: collapse;
+
+  .main-head {
+    text-transform: uppercase;
+    font: 25px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid;
+  }
+
+  .number-head {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+    border: 1px solid;
+  }
+
+  tbody {
+    font: 18px "degular", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  td,
+  th {
+    border: 1px solid;
+    padding: 10px 20px;
+  }
+
+}
+
+
+/* page intro */
+
+.page-intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+ 
+  h1,
+  h3,
+  table,
+  .title-seperator {
+    align-self: center;
+  }
+}
+
+.title-seperator {
+  border-left: 1px solid;
+  height: 100px;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+
+/* images */
+
+.picture-frame {
+  border: solid 1px;
+  padding: 0.5em;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+  }
+}
+
+.portrait {
+  border: solid 1px;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  img {
+    width: 100%;
+  }
+}
+
+figcaption {
+  font: 16px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}

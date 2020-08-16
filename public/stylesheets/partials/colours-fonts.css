@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0; }
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2; }
+
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9; }
+
+h2,
+.ticker-tape {
+  font: 20px "wedding-gothic-atf";
+  text-transform: lowercase; }
+
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1; }

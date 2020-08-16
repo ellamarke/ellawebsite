@@ -18,19 +18,6 @@ $main-pink: #e698c0;
 $main-peach: #f79b83;
 $main-off-white: #fff2eb;
 
-
-/* main colour borders */
-
-.content {
-  border-right: solid 10px $main-pink;
-}
-
-.content-menu {
-  border-left: solid 10px $main-blue;
-}
-
-/* || colours */
-
 body {
   color: $main-text-color;
   background-color: $main-background-color;
