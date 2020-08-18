@@ -1,4 +1,9 @@
 
+a {
+  color: $main-text-color;
+  text-decoration: none;
+}
+
 /* project table */
 
 .project-table {
@@ -17,6 +22,7 @@
   td {
     border: 1px solid;
     padding: 10px 20px;
+    padding: 10px;
   }
 }
 
@@ -40,6 +46,12 @@
   font: 20px "wedding-gothic-atf";
 }
 
+.go-back:hover {
+  P {
+    background-color: $main-green;
+  }
+}
+
 
 /* case study grid */
 
@@ -57,7 +69,7 @@
   grid-column-end: 10;
 }
 
-.double-caption {
+.double-caption-1 {
   grid-row-start: 2;
   grid-column-start: 5;
   grid-column-end: 9;

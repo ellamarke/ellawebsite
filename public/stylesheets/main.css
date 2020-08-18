@@ -274,6 +274,10 @@ h5 {
       padding: 5px 30px;
       margin-bottom: 40px; }
 
+a {
+  color: #353532;
+  text-decoration: none; }
+
 /* project table */
 .project-table {
   max-width: 80%;
@@ -285,7 +289,8 @@ h5 {
     font: 18px "degular", Helvetica, Arial, sans-serif; }
   .project-table td {
     border: 1px solid;
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    padding: 10px; }
 
 /* || case-study */
 .case-study {
@@ -302,6 +307,9 @@ h5 {
     font: inherit;
     padding: 5px; }
 
+.go-back:hover P {
+  background-color: #9ace9f; }
+
 /* case study grid */
 .case-study {
   display: grid;
@@ -314,7 +322,7 @@ h5 {
   grid-column-start: 4;
   grid-column-end: 10; }
 
-.double-caption {
+.double-caption-1 {
   grid-row-start: 2;
   grid-column-start: 5;
   grid-column-end: 9; }
@@ -413,3 +421,37 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
   align-self: center; }
   .go-back p {
     padding: 5px 30px; }
+
+/* || Phones */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 100px;
+    margin-top: 30px; }
+  .sub-heading {
+    margin: 20px 40px; }
+  .project-table {
+    margin-top: 20px;
+    max-width: 90%; }
+    .project-table td {
+      font-size: 14px; }
+  .img {
+    grid-column-start: 2;
+    grid-column-end: 12; }
+  .double-caption {
+    grid-column-start: 2;
+    grid-column-end: 12; }
+  .quote {
+    font-size: 60px; }
+  .caption-table {
+    grid-column-start: 2;
+    grid-column-end: 12; }
+  .roundel {
+    width: 7em; }
+  .img-2 .img {
+    grid-column-start: 2;
+    grid-column-end: 12; } }
+
+/* || Portrait tablets / big boy phones */
+/* || Landscape tablets */
+/* || Computer */
+/* || Extra large computer */

@@ -1,0 +1,78 @@
+/* || Phones */
+
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 100px;
+    margin-top: 30px;
+  }
+
+  .sub-heading {
+    margin: 20px 40px;
+  }
+
+  .project-table {
+    margin-top: 20px;
+    max-width: 90%;
+
+    td {
+      font-size: 14px;
+    }
+  }
+
+  .img {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .double-caption {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .quote {
+    font-size: 60px;
+  }
+
+  .caption-table {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .roundel {
+    width: 7em;
+  }
+ 
+  /* THIS DOESN'T WORK*/
+  .img-2 {
+    .img {
+      grid-column-start: 2;
+      grid-column-end: 12;
+    }
+  }
+
+}
+
+
+/* || Portrait tablets / big boy phones */
+
+
+@media only screen and (min-width: 600px) {}
+
+
+/* || Landscape tablets */
+
+
+@media only screen and (min-width: 768px) {}
+
+
+/* || Computer */
+
+
+@media only screen and (min-width: 992px) {}
+
+
+/* || Extra large computer */
+
+
+@media only screen and (min-width: 1200px) {}
