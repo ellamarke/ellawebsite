@@ -2,6 +2,10 @@
 
 
 @media only screen and (max-width: 600px) {
+  .case-study {
+    display: block;
+  }
+
   .title {
     font-size: 100px;
     margin-top: 30px;
@@ -14,42 +18,55 @@
   .project-table {
     margin-top: 20px;
     max-width: 90%;
-
-    td {
-      font-size: 14px;
-    }
   }
 
-  .img {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-  .double-caption {
-    grid-column-start: 2;
-    grid-column-end: 12;
+  td {
+    font-size: 17px;
   }
 
   .quote {
-    font-size: 60px;
+    font-size: 50px;
+    margin: 40px;
+  }
+
+  .img {
+    margin: 40px;
+  }
+
+  .double-caption {
+    margin: 0;
   }
 
   .caption-table {
-    grid-column-start: 2;
-    grid-column-end: 12;
+    margin: 0 40px;
   }
 
-  .roundel {
-    width: 7em;
+.roundel-img {
+  margin: 50px;
+  top: 0%;
+  left: 10%
+}
+
+.roundel-1 {
+  width: 7em;
+  top: -10%;
+    left: 1%;
+}
+
+.roundel-2 {
+  width: 7em;
+  top: -15%;
+    left: -2%;
+}
+
+.thanks-back {
+  h4 {
+    font-size: 40px;
+    line-height: 1em;
+    margin: 40px;
   }
- 
-  /* THIS DOESN'T WORK*/
-  .img-2 {
-    .img {
-      grid-column-start: 2;
-      grid-column-end: 12;
-    }
-  }
+  
+}
 
 }
 
