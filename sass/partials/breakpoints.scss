@@ -8,7 +8,7 @@
 
   .title {
     font-size: 100px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .sub-heading {
@@ -16,21 +16,40 @@
   }
 
   .project-table {
-    margin-top: 20px;
+    margin: 40px 40px;
     max-width: 90%;
+    thead {
+      td {
+      font-size: 14px;
+      }
+    }
   }
 
   td {
     font-size: 17px;
   }
 
+
   .quote {
     font-size: 50px;
-    margin: 40px;
+    margin: 70px 40px;
   }
 
   .img {
     margin: 40px;
+  }
+
+  .img-3 {
+    margin-right: 120px;
+  }
+
+
+  .img-5 {
+    margin-right: 120px;
+  }
+
+  .img-6 {
+    margin-left: 120px;
   }
 
   .double-caption {
@@ -41,32 +60,42 @@
     margin: 0 40px;
   }
 
-.roundel-img {
-  margin: 50px;
-  top: 0%;
-  left: 10%
-}
-
-.roundel-1 {
-  width: 7em;
-  top: -10%;
-    left: 1%;
-}
-
-.roundel-2 {
-  width: 7em;
-  top: -15%;
-    left: -2%;
-}
-
-.thanks-back {
-  h4 {
-    font-size: 40px;
-    line-height: 1em;
-    margin: 40px;
+  .roundel-img {
+    margin: 50px;
+    top: 0%;
+    left: 10%
   }
-  
-}
+
+  .roundel-1 {
+    width: 7em;
+    top: -10%;
+    left: 1%;
+  }
+
+  .roundel-2 {
+    width: 7em;
+    top: -15%;
+    left: -2%;
+  }
+
+  .thanks-back {
+    h4 {
+      font-size: 40px;
+      line-height: 1.1em;
+      margin: 40px 40px 10px 40px;
+    }
+
+  }
+
+  .go-back {
+    margin: 0 40px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  figcaption {
+    font-size: 14px;
+  }
 
 }
 
