@@ -109,16 +109,6 @@ a {
   position: relative;
 }
 
-/*
-.roundel-1 {
-  position: absolute;
-  top: -8%;
-  left: 83%;
-  width: 9em;
-  animation: spin 10s linear infinite;
-}
-*/ 
-
 .img-3 {
   grid-row-start: 4;
   grid-column-start: 8;
@@ -143,7 +133,6 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
   width: 9em;
   animation: spin 10s linear infinite;
 }
-
 
 
 @keyframes spin {

@@ -356,15 +356,6 @@ a {
   grid-column-end: 7;
   position: relative; }
 
-/*
-.roundel-1 {
-  position: absolute;
-  top: -8%;
-  left: 83%;
-  width: 9em;
-  animation: spin 10s linear infinite;
-}
-*/
 .img-3 {
   grid-row-start: 4;
   grid-column-start: 8;
@@ -430,7 +421,7 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
   .go-back p {
     padding: 5px 30px; }
 
-/* || Phones */
+/* || PHONES */
 @media only screen and (max-width: 768px) {
   /* || PROJECT PAGES */
   .case-study {
@@ -494,56 +485,7 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
     left: 80%;
     width: 4em; } }
 
-/* || Portrait tablets / big boy phones */
-/*
-@media only screen and (max-width: 600px) {
-  .img-1 {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-  .double-caption {
-    grid-column-start: 2;
-    grid-column-end: 12; 
-  }
-
-  .caption-table {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-  .img-2 {
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
-
-  .img-3 {
-    grid-column-start: 8;
-    grid-column-end: 12;
-  }
-}
-*/
-/* || Landscape tablets */
-/*
-@media only screen and (max-width: 768px) {
-  .img-1 {
-    grid-column-start: 3;
-    grid-column-end: 11;
-  }
-
-  .double-caption {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-  .caption-table {
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-
-}
-*/
-/* || Computer */
+/* || COMPUTER */
 @media only screen and (max-width: 992px) {
   /* || PROJECT PAGES */
   .quote {
@@ -561,7 +503,7 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
     grid-column-start: 7;
     grid-column-end: 12; } }
 
-/* || Extra large computer */
+/* || LARGE COMPUTER */
 @media only screen and (max-width: 1200px) {
   .double-caption {
     grid-column-start: 4;
