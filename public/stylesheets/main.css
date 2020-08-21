@@ -98,9 +98,12 @@ h5 {
 .picture-frame {
   border: solid 1px;
   padding: 0.5em;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
   .picture-frame img {
     width: 100%; }
+  .picture-frame img.roundel {
+    width: 9em; }
 
 .portrait {
   border: solid 1px;
@@ -252,7 +255,7 @@ h5 {
       border-right: none;
       border-bottom: solid 1px;
       border-top: solid 1px;
-      padding: 10px 40px 10px 40px;
+      padding: 10px 35px 10px 35px;
       color: #353532; }
     .footer ul .lets-talk {
       text-align: left; }
@@ -278,6 +281,9 @@ a {
   color: #353532;
   text-decoration: none; }
 
+.page-intro .title {
+  margin-top: 50px; }
+
 /* project table */
 .project-table {
   max-width: 80%;
@@ -300,7 +306,7 @@ a {
   border-top: solid 1px; }
 
 .go-back {
-  font: 20px "wedding-gothic-atf"; }
+  font: 18px "wedding-gothic-atf"; }
   .go-back p {
     border: solid 1px;
     background-color: #f79b83;
@@ -350,13 +356,15 @@ a {
   grid-column-end: 7;
   position: relative; }
 
+/*
 .roundel-1 {
   position: absolute;
   top: -8%;
   left: 83%;
   width: 9em;
-  animation: spin 10s linear infinite; }
-
+  animation: spin 10s linear infinite;
+}
+*/
 .img-3 {
   grid-row-start: 4;
   grid-column-start: 8;
@@ -372,8 +380,8 @@ a {
 https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20to%20an%20element%20using%20the%20animation%20property.&text=spin%20is%20the%20name%20of,and%20to%20repeat%20it%20infinitely. */
 .roundel {
   position: absolute;
-  top: -10%;
-  left: -10%;
+  top: -4.5em;
+  left: -4.5em;
   width: 9em;
   animation: spin 10s linear infinite; }
 
@@ -423,7 +431,8 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
     padding: 5px 30px; }
 
 /* || Phones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  /* || PROJECT PAGES */
   .case-study {
     display: block; }
   .title {
@@ -457,26 +466,106 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
     margin: 50px;
     top: 0%;
     left: 10%; }
-  .roundel-1 {
-    width: 7em;
-    top: -10%;
-    left: 1%; }
-  .roundel-2 {
-    width: 7em;
-    top: -15%;
-    left: -2%; }
+  .picture-frame img.roundel {
+    width: 6em;
+    top: -3em;
+    left: -3em; }
   .thanks-back h4 {
     font-size: 40px;
     line-height: 1.1em;
     margin: 40px 40px 10px 40px; }
   .go-back {
     margin: 0 40px;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center; }
   figcaption {
-    font-size: 14px; } }
+    font-size: 14px; }
+  /* || FOOTER */
+  ul {
+    margin: 0; }
+  .footer ul {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0; }
+  .footer ul a {
+    padding: 10px 20px; }
+  .footer .footer-roundel {
+    top: -120%;
+    left: 80%;
+    width: 4em; } }
 
 /* || Portrait tablets / big boy phones */
+/*
+@media only screen and (max-width: 600px) {
+  .img-1 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .double-caption {
+    grid-column-start: 2;
+    grid-column-end: 12; 
+  }
+
+  .caption-table {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .img-2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .img-3 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+  }
+}
+*/
 /* || Landscape tablets */
+/*
+@media only screen and (max-width: 768px) {
+  .img-1 {
+    grid-column-start: 3;
+    grid-column-end: 11;
+  }
+
+  .double-caption {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .caption-table {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+}
+*/
 /* || Computer */
+@media only screen and (max-width: 992px) {
+  /* || PROJECT PAGES */
+  .quote {
+    font-size: 70px; }
+  .img-2 {
+    grid-column-start: 2;
+    grid-column-end: 7; }
+  .img-3 {
+    grid-column-start: 8;
+    grid-column-end: 12; }
+  .img-5 {
+    grid-column-start: 2;
+    grid-column-end: 6; }
+  .img-6 {
+    grid-column-start: 7;
+    grid-column-end: 12; } }
+
 /* || Extra large computer */
+@media only screen and (max-width: 1200px) {
+  .double-caption {
+    grid-column-start: 4;
+    grid-column-end: 10; }
+  .caption-table {
+    grid-column-start: 4;
+    grid-column-end: 10; } }

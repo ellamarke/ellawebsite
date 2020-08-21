@@ -1,7 +1,9 @@
 /* || Phones */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  /* || PROJECT PAGES */
+
   .case-study {
     display: block;
   }
@@ -18,9 +20,10 @@
   .project-table {
     margin: 40px 40px;
     max-width: 90%;
+
     thead {
       td {
-      font-size: 14px;
+        font-size: 14px;
       }
     }
   }
@@ -28,7 +31,6 @@
   td {
     font-size: 17px;
   }
-
 
   .quote {
     font-size: 50px;
@@ -42,7 +44,6 @@
   .img-3 {
     margin-right: 120px;
   }
-
 
   .img-5 {
     margin-right: 120px;
@@ -66,17 +67,15 @@
     left: 10%
   }
 
-  .roundel-1 {
-    width: 7em;
-    top: -10%;
-    left: 1%;
-  }
+  .picture-frame {
 
-  .roundel-2 {
-    width: 7em;
-    top: -15%;
-    left: -2%;
+  img.roundel {
+    width: 6em;
+    top: -3em;
+    left: -3em;
   }
+}
+
 
   .thanks-back {
     h4 {
@@ -89,7 +88,7 @@
 
   .go-back {
     margin: 0 40px;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
   }
 
@@ -97,28 +96,131 @@
     font-size: 14px;
   }
 
+
+
+  /* || FOOTER */
+
+  ul {
+    margin: 0;
+  }
+
+  .footer ul {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .footer ul a {
+    padding: 10px 20px;
+  }
+
+  .footer .footer-roundel {
+    top: -120%;
+    left: 80%;
+    width: 4em;
+  }
 }
 
 
 /* || Portrait tablets / big boy phones */
 
+/*
+@media only screen and (max-width: 600px) {
+  .img-1 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
 
-@media only screen and (min-width: 600px) {}
+  .double-caption {
+    grid-column-start: 2;
+    grid-column-end: 12; 
+  }
 
+  .caption-table {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .img-2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .img-3 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+  }
+}
+*/
 
 /* || Landscape tablets */
 
+/*
+@media only screen and (max-width: 768px) {
+  .img-1 {
+    grid-column-start: 3;
+    grid-column-end: 11;
+  }
 
-@media only screen and (min-width: 768px) {}
+  .double-caption {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
 
+  .caption-table {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+}
+*/
 
 /* || Computer */
 
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 992px) {
+
+  /* || PROJECT PAGES */
+
+  .quote {
+    font-size: 70px;
+  }
+
+  .img-2 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+  }
+
+  .img-3 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+  }
+
+  .img-5 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+
+  .img-6 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+  }
+
+
+}
 
 
 /* || Extra large computer */
 
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+  .double-caption {
+    grid-column-start: 4;
+    grid-column-end: 10;
+  }
+
+  .caption-table {
+    grid-column-start: 4;
+    grid-column-end: 10;
+  }
+}

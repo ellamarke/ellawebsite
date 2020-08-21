@@ -75,9 +75,14 @@
   border: solid 1px;
   padding: 0.5em;
   box-sizing: border-box;
+  position: relative;
 
   img {
     width: 100%;
+  }
+
+  img.roundel {
+    width: 9em;
   }
 }
 
