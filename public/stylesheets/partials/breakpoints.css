@@ -1,0 +1,90 @@
+/* || PHONES */
+@media only screen and (max-width: 768px) {
+  /* || PROJECT PAGES */
+  .case-study {
+    display: block; }
+  .title {
+    font-size: 100px;
+    margin-top: 40px; }
+  .sub-heading {
+    margin: 20px 40px; }
+  .project-table {
+    margin: 40px 40px;
+    max-width: 90%; }
+    .project-table thead td {
+      font-size: 14px; }
+  td {
+    font-size: 17px; }
+  .quote {
+    font-size: 50px;
+    margin: 70px 40px; }
+  .img {
+    margin: 80px 40px; }
+  .img-3 {
+    margin-right: 120px; }
+  .img-5 {
+    margin-right: 120px; }
+  .img-6 {
+    margin-left: 120px; }
+  .double-caption {
+    margin: 0; }
+  .caption-table {
+    margin: 0 40px; }
+  .roundel-img {
+    margin: 50px;
+    top: 0%;
+    left: 10%; }
+  .picture-frame img.roundel {
+    width: 6em;
+    top: -3em;
+    left: -3em; }
+  .thanks-back h4 {
+    font-size: 40px;
+    line-height: 1.1em;
+    margin: 40px 40px 10px 40px; }
+  .go-back {
+    margin: 0 40px;
+    font-size: 13px;
+    text-align: center; }
+  figcaption {
+    font-size: 14px; }
+  /* || FOOTER */
+  ul {
+    margin: 0; }
+  .footer ul {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0; }
+  .footer ul a {
+    padding: 10px 20px; }
+  .footer .footer-roundel {
+    top: -120%;
+    left: 80%;
+    width: 4em; } }
+
+/* || COMPUTER */
+@media only screen and (max-width: 992px) {
+  /* || PROJECT PAGES */
+  .quote {
+    font-size: 70px; }
+  .img-2 {
+    grid-column-start: 2;
+    grid-column-end: 7; }
+  .img-3 {
+    grid-column-start: 8;
+    grid-column-end: 12; }
+  .img-5 {
+    grid-column-start: 2;
+    grid-column-end: 6; }
+  .img-6 {
+    grid-column-start: 7;
+    grid-column-end: 12; } }
+
+/* || LARGE COMPUTER */
+@media only screen and (max-width: 1200px) {
+  .double-caption {
+    grid-column-start: 4;
+    grid-column-end: 10; }
+  .caption-table {
+    grid-column-start: 4;
+    grid-column-end: 10; } }
