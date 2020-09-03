@@ -1,0 +1,62 @@
+
+a {
+  color: $main-text-color;
+  text-decoration: none;
+}
+
+.page-intro {
+  .title {
+    margin-top: 50px;
+  }
+}
+
+
+/* main grid */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5em 1em;
+  grid-template-rows: auto;
+}
+
+.about-img-1 {
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-column-end: 9;
+}    
+
+.portrait {
+  border: solid 1px;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border-top-left-radius: 47%;
+  border-top-right-radius: 47%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.contact-rectangles {
+  p {
+    border: solid 1px;
+    background-color: $main-pink;
+    font: inherit;
+    padding: 5px 30px;
+    margin-bottom: 40px;
+  }
+
+  font: 15px "made_miragethin", Georgia, serif;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  grid-row-start: 2;
+}
+
+.necklace {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
