@@ -48,6 +48,13 @@ h5 {
   text-align: center;
   line-height: 1.1; }
 
+h6 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.1; }
+
 /* main colour borders */
 .content {
   border-right: solid 10px #e698c0; }
@@ -75,6 +82,11 @@ h5 {
     border: 1px solid;
     padding: 10px 20px; }
 
+/* small captions */
+.small-caption p {
+  border: solid 1px;
+  padding: 5%; }
+
 /* page intro */
 .page-intro {
   display: flex;
@@ -97,7 +109,7 @@ h5 {
 /* images */
 .picture-frame {
   border: solid 1px;
-  padding: 1.5%;
+  padding: 0.5em;
   box-sizing: border-box;
   position: relative; }
   .picture-frame img {

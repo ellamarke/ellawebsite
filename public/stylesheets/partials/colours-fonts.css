@@ -47,3 +47,10 @@ h5 {
   margin-bottom: 10px;
   text-align: center;
   line-height: 1.1; }
+
+h6 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.1; }

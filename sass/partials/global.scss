@@ -42,6 +42,15 @@
 
 }
 
+/* small captions */
+
+.small-caption {
+  p {
+  border: solid 1px;
+  padding: 5%;
+  }
+}
+
 
 /* page intro */
 
@@ -73,7 +82,7 @@
 
 .picture-frame {
   border: solid 1px;
-  padding: 1.5%;
+  padding: 0.5em;
   box-sizing: border-box;
   position: relative;
 
