@@ -1,11 +1,16 @@
 /* || PHONES */
 @media only screen and (max-width: 768px) {
+  /* || HOME */
+  .main-grid {
+    display: block; }
   /* || PROJECT PAGES */
   .case-study {
     display: block; }
   .title {
-    font-size: 100px;
-    margin-top: 40px; }
+    font-size: 90px;
+    margin: 40px 20px; }
+  .page-intro {
+    padding-bottom: 20px; }
   .sub-heading {
     margin: 20px 40px; }
   .project-table {
@@ -48,6 +53,11 @@
     text-align: center; }
   figcaption {
     font-size: 14px; }
+  /* || WORK (flex box) */
+  .row {
+    margin: 0 5%; }
+  .work-sub-heading h6 {
+    font-size: 70px; }
   /* || FOOTER */
   ul {
     margin: 0; }
@@ -82,9 +92,13 @@
 
 /* || LARGE COMPUTER */
 @media only screen and (max-width: 1200px) {
-  .double-caption {
+  .double-caption-1 {
     grid-column-start: 4;
     grid-column-end: 10; }
-  .caption-table {
+  .caption-3 .caption-4 {
     grid-column-start: 4;
-    grid-column-end: 10; } }
+    grid-column-end: 11; }
+  .picture-frame img.roundel {
+    width: 6em;
+    top: -3em;
+    left: -3em; } }

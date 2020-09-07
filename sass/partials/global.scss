@@ -75,6 +75,8 @@
 
 .sub-heading {
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 
@@ -146,4 +148,11 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
   left: -4.5em;
   width: 9em;
   animation: spin 10s linear infinite;
+}
+
+/* Horizontal Rule */
+hr {
+border: none;
+height: 1px;
+background: $main-text-color;
 }
