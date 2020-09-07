@@ -1,4 +1,3 @@
-
 a {
   color: $main-text-color;
   text-decoration: none;
@@ -14,63 +13,84 @@ a {
 /* main grid */
 
 .main-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 5em 1em;
-  grid-template-rows: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.about-img-1 {
-  grid-row-start: 1;
-  grid-column-start: 4;
-  grid-column-end: 9;
-}    
-
-.portrait {
-  border: solid 1px;
-  padding: 0.5em;
-  box-sizing: border-box;
-  border-top-left-radius: 47%;
-  border-top-right-radius: 47%;
+.self-portrait {
+  margin: 0 30%;
 
   img {
     width: 100%;
   }
 }
 
+
 .contact-rectangles {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+
+  font: 50px "made_miragethin",
+    Georgia,
+    serif;
+
+  z-index: 10;
+
+
   p {
     border: solid 1px;
-    font: inherit;
-    padding: 5px 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
   }
 
-  font: 50px "made_miragethin", Georgia, serif;
 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  .seperator {
+    align-self: center;
+  }
 
   .email-me {
-    background-color: $main-pink;
+    p {
+      padding: 5px 5%;
+      background-color: $main-pink;
+    }
   }
 
   .link-me {
-    background-color: $main-peach;
+    p {
+      background-color: $main-blue;
+    }
   }
 
   .instagram-me {
-    background-color: $main-green;
+    p {
+      background-color: $main-peach;
+    }
+  }
+
+  .connect-me {
+    p {
+      background-color: $main-green;
+    }
   }
 
   a:hover {
-    background: $main-peach;
+    p {
+      background: $main-peach;
+    }
   }
 }
 
 .necklace {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 12;
-} 
+
+  img {
+    width: 100%;
+  }
+
+  position: relative;
+  margin-top:-200px;
+  margin-bottom: 100px;
+  z-index: 20;
+}

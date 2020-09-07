@@ -55,7 +55,8 @@
     font-size: 14px; }
   /* || WORK (flex box) */
   .row {
-    margin: 0 5%; }
+    margin: 10px 5%;
+    margin-bottom: 10px; }
   .work-sub-heading h6 {
     font-size: 70px; }
   /* || FOOTER */
@@ -95,9 +96,9 @@
   .double-caption-1, .double-caption-2 {
     grid-column-start: 4;
     grid-column-end: 10; }
-  .caption-3, .caption-4 {
+  .caption-3, .caption-4, .home-caption-1, .home-caption-2, .home-caption-3 {
     grid-column-start: 4;
-    grid-column-end: 11; }
+    grid-column-end: 10; }
   .picture-frame img.roundel {
     width: 6em;
     top: -3em;

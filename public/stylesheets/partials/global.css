@@ -162,3 +162,8 @@ hr {
   border: none;
   height: 1px;
   background: #353532; }
+
+/* General Seperator */
+.seperator {
+  border-left: 1px solid;
+  height: 100px; }

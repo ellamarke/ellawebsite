@@ -163,6 +163,11 @@ hr {
   height: 1px;
   background: #353532; }
 
+/* General Seperator */
+.seperator {
+  border-left: 1px solid;
+  height: 100px; }
+
 @font-face {
   font-family: 'made_miragethin';
   src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
@@ -485,9 +490,9 @@ a {
 .home-img-2 {
   grid-row-start: 2;
   grid-column-start: 7;
-  grid-column-end: 11;
+  grid-column-end: 12;
   position: relative;
-  margin-top: 100px; }
+  margin-top: 20%; }
 
 .home-caption-2 {
   grid-row-start: 3;
@@ -503,15 +508,15 @@ a {
 .home-img-4 {
   grid-row-start: 4;
   grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-end: 7;
   position: relative;
-  margin-top: 100px; }
+  margin-top: 20%; }
 
 .home-img-5 {
   grid-row-start: 5;
   grid-column-start: 7;
   grid-column-end: 12;
-  margin-top: 200px; }
+  margin-top: 30%; }
 
 .home-img-6 {
   grid-row-start: 5;
@@ -589,48 +594,47 @@ a {
 
 /* main grid */
 .main-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 5em 1em;
-  grid-template-rows: auto; }
-
-.about-img-1 {
-  grid-row-start: 1;
-  grid-column-start: 4;
-  grid-column-end: 9; }
-
-.portrait {
-  border: solid 1px;
-  padding: 0.5em;
-  box-sizing: border-box;
-  border-top-left-radius: 47%;
-  border-top-right-radius: 47%; }
-  .portrait img {
-    width: 100%; }
-
-.contact-rectangles {
-  font: 50px "made_miragethin", Georgia, serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
+
+.self-portrait {
+  margin: 0 30%; }
+  .self-portrait img {
+    width: 100%; }
+
+.contact-rectangles {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  font: 50px "made_miragethin", Georgia, serif;
+  z-index: 10; }
   .contact-rectangles p {
     border: solid 1px;
-    font: inherit;
-    padding: 5px 30px;
-    margin-bottom: 40px; }
-  .contact-rectangles .email-me {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center; }
+  .contact-rectangles .seperator {
+    align-self: center; }
+  .contact-rectangles .email-me p {
+    padding: 5px 5%;
     background-color: #e698c0; }
-  .contact-rectangles .link-me {
+  .contact-rectangles .link-me p {
+    background-color: #80bfc2; }
+  .contact-rectangles .instagram-me p {
     background-color: #f79b83; }
-  .contact-rectangles .instagram-me {
+  .contact-rectangles .connect-me p {
     background-color: #9ace9f; }
-  .contact-rectangles a:hover {
+  .contact-rectangles a:hover p {
     background: #f79b83; }
 
 .necklace {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 12; }
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: 100px;
+  z-index: 20; }
+  .necklace img {
+    width: 100%; }
 
 /*  original flex code from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 /* FLEX */
@@ -639,7 +643,7 @@ a {
   flex-wrap: wrap;
   padding: 0;
   margin: 0 10%;
-  margin-bottom: 10px; }
+  margin-bottom: 100px; }
 
 .column {
   max-width: 40%;
@@ -722,7 +726,8 @@ a {
     font-size: 14px; }
   /* || WORK (flex box) */
   .row {
-    margin: 0 5%; }
+    margin: 10px 5%;
+    margin-bottom: 10px; }
   .work-sub-heading h6 {
     font-size: 70px; }
   /* || FOOTER */
@@ -762,9 +767,9 @@ a {
   .double-caption-1, .double-caption-2 {
     grid-column-start: 4;
     grid-column-end: 10; }
-  .caption-3, .caption-4 {
+  .caption-3, .caption-4, .home-caption-1, .home-caption-2, .home-caption-3 {
     grid-column-start: 4;
-    grid-column-end: 11; }
+    grid-column-end: 10; }
   .picture-frame img.roundel {
     width: 6em;
     top: -3em;
