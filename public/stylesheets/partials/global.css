@@ -15,6 +15,7 @@ p {
   font: 18px "degular", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
+/* PAGE TITLES */
 h1 {
   font: 120px "made_miragethin", Georgia, serif;
   margin-left: 15%;
@@ -24,16 +25,19 @@ h1 {
   text-align: center;
   line-height: 0.9; }
 
+/* TICKER TAPE */
 h2,
 .ticker-tape {
   font: 20px "wedding-gothic-atf";
   text-transform: lowercase; }
 
+/* PAGE TITLE SUB-HEAD */
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+/* THANKS BACK */
 h4 {
   font: 50px "made_miragethin", Georgia, serif;
   letter-spacing: 150;
@@ -41,6 +45,7 @@ h4 {
   margin-bottom: 10px;
   text-align: center; }
 
+/* QUOTE */
 h5 {
   font: 100px "made_miragethin", Georgia, serif;
   margin-top: 10px;
@@ -49,11 +54,20 @@ h5 {
   line-height: 1.1; }
 
 h6 {
-  font: 100px "made_miragethin", Georgia, serif;
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: left;
-  line-height: 1.1; }
+  line-height: 1.1;
+  letter-spacing: 0.03em; }
+
+/* text highlight */
+::selection {
+  background: #f79b83; }
+
+::-moz-selection {
+  background: #f79b83;
+  /* Gecko Browsers */ }
 
 /* main colour borders */
 .content {
@@ -82,10 +96,19 @@ h6 {
     border: 1px solid;
     padding: 10px 20px; }
 
-/* small captions */
+/* captions */
 .small-caption p {
   border: solid 1px;
   padding: 5%; }
+
+.special-caption {
+  font: 15px "wedding-gothic-atf"; }
+  .special-caption span {
+    border: solid 1px;
+    background-color: #e698c0;
+    font: inherit;
+    padding: 5px 30px;
+    margin-bottom: 40px; }
 
 /* page intro */
 .page-intro {
@@ -163,7 +186,7 @@ hr {
   height: 1px;
   background: #353532; }
 
-/* General Seperator */
+/* General seperator */
 .seperator {
   border-left: 1px solid;
   height: 100px; }

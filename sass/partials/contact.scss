@@ -28,9 +28,11 @@ a {
 
 
 .contact-rectangles {
+  display: flex;
   flex-flow: column;
   position: relative;
   align-items: center;
+  justify-content: center;
 
   font: 50px "made_miragethin",
     Georgia,
@@ -44,9 +46,10 @@ a {
     text-align: center;
     padding: 15px 20px;
   }
- div {
-   margin-bottom: 40px;
- }
+
+  div {
+    margin-bottom: 40px;
+  }
 
   .seperator {
     align-self: center;
@@ -56,11 +59,17 @@ a {
     span {
       background-color: $main-pink;
     }
+    span:hover {
+      background-color: $main-background-color;
+    }
   }
 
   .link-me {
     span {
       background-color: $main-blue;
+    }
+    span:hover {
+      background-color: $main-background-color;
     }
   }
 
@@ -68,20 +77,21 @@ a {
     span {
       background-color: $main-peach;
     }
+    span:hover {
+      background-color: $main-background-color;
+    }
   }
 
   .connect-me {
     span {
       background-color: $main-green;
     }
-  }
-
-  a:hover {
-    p {
-      background: $main-peach;
+    span:hover {
+      background-color: $main-background-color;
     }
   }
 }
+ 
 
 .necklace {
 

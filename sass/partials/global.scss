@@ -1,5 +1,14 @@
 @import 'colours-fonts.scss';
 
+/* text highlight */
+
+::selection {
+  background: $main-peach /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $main-peach; /* Gecko Browsers */
+}
+
 /* main colour borders */
 
 .content {
@@ -9,7 +18,7 @@
 .content-menu {
   border-left: solid 10px $main-blue;
 }
- 
+
 
 /* caption table */
 
@@ -42,13 +51,25 @@
 
 }
 
-/* small captions */
+/* captions */
 
 .small-caption {
   p {
-  border: solid 1px;
-  padding: 5%;
+    border: solid 1px;
+    padding: 5%;
   }
+}
+
+.special-caption {
+  span {
+    border: solid 1px;
+    background-color: $main-pink;
+    font: inherit;
+    padding: 5px 30px;
+    margin-bottom: 40px;
+  }
+
+  font: 15px "wedding-gothic-atf";
 }
 
 
@@ -59,7 +80,7 @@
   justify-content: center;
   flex-direction: column;
   padding-bottom: 40px;
- 
+
   h1,
   h3,
   table,
@@ -115,12 +136,12 @@ figcaption {
 }
 
 
-/* ROUNDELS */ 
+/* ROUNDELS */
 
 /* codexworld.com/how-to/position-place-image-over-image-css/
-https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20to%20an%20element%20using%20the%20animation%20property.&text=spin%20is%20the%20name%20of,and%20to%20repeat%20it%20infinitely. */ 
+https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20to%20an%20element%20using%20the%20animation%20property.&text=spin%20is%20the%20name%20of,and%20to%20repeat%20it%20infinitely. */
 
-/* Left side roundel */ 
+/* Left side roundel */
 
 .roundel {
   position: absolute;
@@ -135,12 +156,13 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
   0% {
     transform: rotateZ(0);
   }
+
   100% {
     transform: rotateZ(360deg);
   }
 }
 
-/* Right side roundel */ 
+/* Right side roundel */
 
 .roundel-right {
   position: absolute;
@@ -152,14 +174,15 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 
 /* Horizontal Rule */
 hr {
-border: none;
-height: 1px;
-background: $main-text-color;
+  border: none;
+  height: 1px;
+  background: $main-text-color;
 }
 
-/* General Seperator */
+/* General seperator */
 
 .seperator {
   border-left: 1px solid;
   height: 100px;
 }
+

@@ -1,62 +1,77 @@
-
-a {
-  color: $main-text-color;
-  text-decoration: none;
-}
-
-.page-intro {
-  .title {
-    margin-top: 50px;
-  }
-}
-
-
-/* main grid */
-
 .main-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 5em 1em;
-  grid-template-rows: auto;
-}
+  .double-caption-1 {
+    grid-row-start: 1;
+  }
 
-.about-img-1 {
-  grid-row-start: 1;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}    
+  .quote {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 11;
+  }
 
-.portrait {
-  border: solid 1px;
-  padding: 0.5em;
-  box-sizing: border-box;
-  border-top-left-radius: 47%;
-  border-top-right-radius: 47%;
+  .special-caption {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 11;
 
-  img {
-    width: 100%;
   }
 }
 
-.contact-rectangles {
-  p {
-    border: solid 1px;
-    background-color: $main-pink;
-    font: inherit;
-    padding: 5px 30px;
-    margin-bottom: 40px;
-  }
-
-  font: 15px "made_miragethin", Georgia, serif;
-
+.testimonial-section {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  align-items: center;
   justify-content: center;
-  grid-row-start: 2;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.necklace {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 12;
+.testimonial-sub-heading {
+  font-size: 20px;
+  text-align: center;
+}
+
+.testimonial {
+  border-collapse: collapse;
+  margin: 30px 25%;
+
+  .client-name {
+    font: 35px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid;
+  }
+
+  .company-name {
+    font: 35px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid;
+  }
+
+  tbody {
+    font: 18px "degular", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  th {
+    border: 1px solid;
+    padding: 10px 20px;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 20px 40px;
+  }
+}
+
+.testimonial-1 {
+  background-color: $main-pink;
+}
+
+.testimonial-2 {
+  background-color: $main-green;
+}
+
+.testimonial-3 {
+  background-color: $main-blue;
 }

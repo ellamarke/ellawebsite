@@ -1,0 +1,22 @@
+.testimonial {
+  border-collapse: collapse; }
+  .testimonial .main-head {
+    text-transform: uppercase;
+    font: 25px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid; }
+  .testimonial .number-head {
+    text-transform: uppercase;
+    font: 14px "wedding-gothic-atf";
+    border: 1px solid; }
+  .testimonial tbody {
+    font: 18px "degular", Helvetica, Arial, sans-serif;
+    line-height: 1.5; }
+  .testimonial td,
+  .testimonial th {
+    border: 1px solid;
+    padding: 10px 20px; }
+
+.testimonial-1 {
+  grid-column-start: 4;
+  grid-column-end: 10; }

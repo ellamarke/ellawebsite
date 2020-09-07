@@ -15,6 +15,7 @@ p {
   font: 18px "degular", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
+/* PAGE TITLES */
 h1 {
   font: 120px "made_miragethin", Georgia, serif;
   margin-left: 15%;
@@ -24,16 +25,19 @@ h1 {
   text-align: center;
   line-height: 0.9; }
 
+/* TICKER TAPE */
 h2,
 .ticker-tape {
   font: 20px "wedding-gothic-atf";
   text-transform: lowercase; }
 
+/* PAGE TITLE SUB-HEAD */
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+/* THANKS BACK */
 h4 {
   font: 50px "made_miragethin", Georgia, serif;
   letter-spacing: 150;
@@ -41,6 +45,7 @@ h4 {
   margin-bottom: 10px;
   text-align: center; }
 
+/* QUOTE */
 h5 {
   font: 100px "made_miragethin", Georgia, serif;
   margin-top: 10px;
@@ -49,11 +54,20 @@ h5 {
   line-height: 1.1; }
 
 h6 {
-  font: 100px "made_miragethin", Georgia, serif;
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: left;
-  line-height: 1.1; }
+  line-height: 1.1;
+  letter-spacing: 0.03em; }
+
+/* text highlight */
+::selection {
+  background: #f79b83; }
+
+::-moz-selection {
+  background: #f79b83;
+  /* Gecko Browsers */ }
 
 /* main colour borders */
 .content {
@@ -82,10 +96,19 @@ h6 {
     border: 1px solid;
     padding: 10px 20px; }
 
-/* small captions */
+/* captions */
 .small-caption p {
   border: solid 1px;
   padding: 5%; }
+
+.special-caption {
+  font: 15px "wedding-gothic-atf"; }
+  .special-caption span {
+    border: solid 1px;
+    background-color: #e698c0;
+    font: inherit;
+    padding: 5px 30px;
+    margin-bottom: 40px; }
 
 /* page intro */
 .page-intro {
@@ -163,7 +186,7 @@ hr {
   height: 1px;
   background: #353532; }
 
-/* General Seperator */
+/* General seperator */
 .seperator {
   border-left: 1px solid;
   height: 100px; }
@@ -185,6 +208,7 @@ p {
   font: 18px "degular", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
+/* PAGE TITLES */
 h1 {
   font: 120px "made_miragethin", Georgia, serif;
   margin-left: 15%;
@@ -194,16 +218,19 @@ h1 {
   text-align: center;
   line-height: 0.9; }
 
+/* TICKER TAPE */
 h2,
 .ticker-tape {
   font: 20px "wedding-gothic-atf";
   text-transform: lowercase; }
 
+/* PAGE TITLE SUB-HEAD */
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+/* THANKS BACK */
 h4 {
   font: 50px "made_miragethin", Georgia, serif;
   letter-spacing: 150;
@@ -211,6 +238,7 @@ h4 {
   margin-bottom: 10px;
   text-align: center; }
 
+/* QUOTE */
 h5 {
   font: 100px "made_miragethin", Georgia, serif;
   margin-top: 10px;
@@ -219,11 +247,12 @@ h5 {
   line-height: 1.1; }
 
 h6 {
-  font: 100px "made_miragethin", Georgia, serif;
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: left;
-  line-height: 1.1; }
+  line-height: 1.1;
+  letter-spacing: 0.03em; }
 
 /* ticker tape */
 .ticker-tape {
@@ -541,51 +570,60 @@ a {
   .see-work p {
     padding: 5px 30px; }
 
-a {
-  color: #353532;
-  text-decoration: none; }
+.main-grid .double-caption-1 {
+  grid-row-start: 1; }
 
-.page-intro .title {
-  margin-top: 50px; }
+.main-grid .quote {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 11; }
 
-/* main grid */
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 5em 1em;
-  grid-template-rows: auto; }
-
-.about-img-1 {
-  grid-row-start: 1;
-  grid-column-start: 5;
-  grid-column-end: 9; }
-
-.portrait {
-  border: solid 1px;
-  padding: 0.5em;
-  box-sizing: border-box;
-  border-top-left-radius: 47%;
-  border-top-right-radius: 47%; }
-  .portrait img {
-    width: 100%; }
-
-.contact-rectangles {
-  font: 15px "made_miragethin", Georgia, serif;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  grid-row-start: 2; }
-  .contact-rectangles p {
-    border: solid 1px;
-    background-color: #e698c0;
-    font: inherit;
-    padding: 5px 30px;
-    margin-bottom: 40px; }
-
-.necklace {
+.main-grid .special-caption {
   grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 12; }
+  grid-column-start: 3;
+  grid-column-end: 11; }
+
+.testimonial-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.testimonial-sub-heading {
+  font-size: 20px;
+  text-align: center; }
+
+.testimonial {
+  border-collapse: collapse;
+  margin: 30px 25%; }
+  .testimonial .client-name {
+    font: 35px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid; }
+  .testimonial .company-name {
+    font: 35px "made_miragethin", Georgia, serif;
+    letter-spacing: 1px;
+    border: 1px solid; }
+  .testimonial tbody {
+    font: 18px "degular", Helvetica, Arial, sans-serif;
+    line-height: 1.5; }
+  .testimonial th {
+    border: 1px solid;
+    padding: 10px 20px; }
+  .testimonial td {
+    border: 1px solid;
+    padding: 20px 40px; }
+
+.testimonial-1 {
+  background-color: #e698c0; }
+
+.testimonial-2 {
+  background-color: #9ace9f; }
+
+.testimonial-3 {
+  background-color: #80bfc2; }
 
 a {
   color: #353532;
@@ -606,9 +644,11 @@ a {
     width: 100%; }
 
 .contact-rectangles {
+  display: flex;
   flex-flow: column;
   position: relative;
   align-items: center;
+  justify-content: center;
   font: 50px "made_miragethin", Georgia, serif;
   z-index: 20; }
   .contact-rectangles span {
@@ -621,14 +661,20 @@ a {
     align-self: center; }
   .contact-rectangles .email-me span {
     background-color: #e698c0; }
+  .contact-rectangles .email-me span:hover {
+    background-color: #ebd5c4; }
   .contact-rectangles .link-me span {
     background-color: #80bfc2; }
+  .contact-rectangles .link-me span:hover {
+    background-color: #ebd5c4; }
   .contact-rectangles .instagram-me span {
     background-color: #f79b83; }
+  .contact-rectangles .instagram-me span:hover {
+    background-color: #ebd5c4; }
   .contact-rectangles .connect-me span {
     background-color: #9ace9f; }
-  .contact-rectangles a:hover p {
-    background: #f79b83; }
+  .contact-rectangles .connect-me span:hover {
+    background-color: #ebd5c4; }
 
 .necklace {
   position: relative;
@@ -669,7 +715,8 @@ a {
 
 /* OUTSIDE FLEX */
 .work-sub-heading {
-  margin: 50px 70px; }
+  margin: 50px 70px;
+  text-align: left; }
 
 /* || PHONES */
 @media only screen and (max-width: 768px) {

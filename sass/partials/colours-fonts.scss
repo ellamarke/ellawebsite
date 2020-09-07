@@ -31,6 +31,8 @@ p {
   line-height: 1.2;
 }
 
+/* PAGE TITLES */ 
+
 h1 {
   font: 120px "made_miragethin", Georgia, serif;
   margin-left: 15%;
@@ -41,17 +43,24 @@ h1 {
   line-height: 0.9;
 }
 
+/* TICKER TAPE */ 
+
 h2,
 .ticker-tape {
   font: 20px "wedding-gothic-atf";
   text-transform: lowercase;
 }
 
+/* PAGE TITLE SUB-HEAD */ 
+
 h3 {
   font: 30px "made_miragethin", Georgia, serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+
+/* THANKS BACK */ 
 
 h4 {
   font: 50px "made_miragethin", Georgia, serif;
@@ -60,6 +69,8 @@ h4 {
   margin-bottom: 10px;
   text-align: center;
 }
+
+/* QUOTE */ 
 
 h5 {
   font: 100px "made_miragethin", Georgia, serif;
@@ -70,9 +81,10 @@ h5 {
 }
 
 h6 {
-  font: 100px "made_miragethin", Georgia, serif;
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: left;
   line-height: 1.1;
+  letter-spacing: 0.03em;
 }
