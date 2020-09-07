@@ -92,7 +92,7 @@ h6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 60px; }
+  padding-bottom: 40px; }
   .page-intro h1,
   .page-intro h3,
   .page-intro table,
@@ -472,31 +472,30 @@ a {
   grid-gap: 5em 1em;
   grid-template-rows: auto; }
 
-.home-img-1 {
-  grid-row-start: 1;
-  grid-column-start: 3;
-  grid-column-end: 7;
-  margin-top: 100px; }
-
 .home-caption-1 {
   grid-row-start: 1;
-  grid-column-start: 8;
-  grid-column-end: 12; }
+  grid-column-start: 5;
+  grid-column-end: 9; }
+
+.home-img-1 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 6; }
 
 .home-img-2 {
   grid-row-start: 2;
-  grid-column-start: 5;
-  grid-column-end: 9;
-  position: relative; }
+  grid-column-start: 7;
+  grid-column-end: 11;
+  position: relative;
+  margin-top: 100px; }
 
 .home-caption-2 {
   grid-row-start: 3;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  margin-top: 100px; }
+  grid-column-start: 5;
+  grid-column-end: 9; }
 
 .home-img-3 {
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-column-start: 8;
   grid-column-end: 12;
   position: relative; }
@@ -505,28 +504,28 @@ a {
   grid-row-start: 4;
   grid-column-start: 2;
   grid-column-end: 6;
-  position: relative; }
+  position: relative;
+  margin-top: 100px; }
 
 .home-img-5 {
-  grid-row-start: 4;
-  grid-column-start: 8;
-  grid-column-end: 12;
-  margin-top: 300px; }
-
-.home-img-6 {
   grid-row-start: 5;
   grid-column-start: 7;
   grid-column-end: 12;
-  margin-top: 100px; }
+  margin-top: 200px; }
 
-.home-caption-3 {
+.home-img-6 {
   grid-row-start: 5;
   grid-column-start: 2;
   grid-column-end: 6; }
 
+.home-caption-3 {
+  grid-row-start: 6;
+  grid-column-start: 5;
+  grid-column-end: 9; }
+
 .see-work {
   align-self: center;
-  grid-row-start: 6;
+  grid-row-start: 7;
   grid-column-start: 3;
   grid-column-end: 11;
   display: flex;
@@ -760,10 +759,10 @@ a {
 
 /* || LARGE COMPUTER */
 @media only screen and (max-width: 1200px) {
-  .double-caption-1 {
+  .double-caption-1, .double-caption-2 {
     grid-column-start: 4;
     grid-column-end: 10; }
-  .caption-3 .caption-4 {
+  .caption-3, .caption-4 {
     grid-column-start: 4;
     grid-column-end: 11; }
   .picture-frame img.roundel {
