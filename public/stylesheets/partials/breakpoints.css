@@ -3,6 +3,11 @@
   /* || HOME */
   .main-grid {
     display: block; }
+  /* || CONTACT */
+  .self-portrait {
+    margin: 0 20% 10% 20%; }
+  .necklace {
+    margin-top: -70px; }
   /* || PROJECT PAGES */
   .case-study {
     display: block; }
@@ -93,13 +98,20 @@
 
 /* || LARGE COMPUTER */
 @media only screen and (max-width: 1200px) {
-  .double-caption-1, .double-caption-2 {
+  .double-caption-1,
+  .double-caption-2 {
     grid-column-start: 4;
     grid-column-end: 10; }
-  .caption-3, .caption-4, .home-caption-1, .home-caption-2, .home-caption-3 {
+  .caption-3,
+  .caption-4,
+  .home-caption-1,
+  .home-caption-2,
+  .home-caption-3 {
     grid-column-start: 4;
     grid-column-end: 10; }
   .picture-frame img.roundel {
     width: 6em;
     top: -3em;
-    left: -3em; } }
+    left: -3em; }
+  .necklace {
+    margin-top: -40px; } }

@@ -283,6 +283,8 @@ h6 {
 /* footer */
 .footer {
   border-top: solid 1px; }
+  .footer .lets-talk {
+    margin-top: 30px; }
   .footer .footer-roundel {
     position: absolute;
     top: -85%;
@@ -593,46 +595,46 @@ a {
   margin-top: 50px; }
 
 /* main grid */
-.main-grid {
+.main-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
 
 .self-portrait {
-  margin: 0 30%; }
+  margin: 0 30% 5% 30%; }
   .self-portrait img {
     width: 100%; }
 
 .contact-rectangles {
-  display: flex;
   flex-flow: column;
   position: relative;
+  align-items: center;
   font: 50px "made_miragethin", Georgia, serif;
-  z-index: 10; }
-  .contact-rectangles p {
-    border: solid 1px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: center; }
+  z-index: 20; }
+  .contact-rectangles span {
+    border: solid 1px #353532;
+    text-align: center;
+    padding: 15px 20px; }
+  .contact-rectangles div {
+    margin-bottom: 40px; }
   .contact-rectangles .seperator {
     align-self: center; }
-  .contact-rectangles .email-me p {
-    padding: 5px 5%;
+  .contact-rectangles .email-me span {
     background-color: #e698c0; }
-  .contact-rectangles .link-me p {
+  .contact-rectangles .link-me span {
     background-color: #80bfc2; }
-  .contact-rectangles .instagram-me p {
+  .contact-rectangles .instagram-me span {
     background-color: #f79b83; }
-  .contact-rectangles .connect-me p {
+  .contact-rectangles .connect-me span {
     background-color: #9ace9f; }
   .contact-rectangles a:hover p {
     background: #f79b83; }
 
 .necklace {
   position: relative;
-  margin-top: -200px;
+  margin-top: -150px;
   margin-bottom: 100px;
-  z-index: 20; }
+  z-index: 10; }
   .necklace img {
     width: 100%; }
 
@@ -674,6 +676,11 @@ a {
   /* || HOME */
   .main-grid {
     display: block; }
+  /* || CONTACT */
+  .self-portrait {
+    margin: 0 20% 10% 20%; }
+  .necklace {
+    margin-top: -70px; }
   /* || PROJECT PAGES */
   .case-study {
     display: block; }
@@ -764,13 +771,20 @@ a {
 
 /* || LARGE COMPUTER */
 @media only screen and (max-width: 1200px) {
-  .double-caption-1, .double-caption-2 {
+  .double-caption-1,
+  .double-caption-2 {
     grid-column-start: 4;
     grid-column-end: 10; }
-  .caption-3, .caption-4, .home-caption-1, .home-caption-2, .home-caption-3 {
+  .caption-3,
+  .caption-4,
+  .home-caption-1,
+  .home-caption-2,
+  .home-caption-3 {
     grid-column-start: 4;
     grid-column-end: 10; }
   .picture-frame img.roundel {
     width: 6em;
     top: -3em;
-    left: -3em; } }
+    left: -3em; }
+  .necklace {
+    margin-top: -40px; } }

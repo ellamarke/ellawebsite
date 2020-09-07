@@ -12,14 +12,14 @@ a {
 
 /* main grid */
 
-.main-grid {
+.main-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .self-portrait {
-  margin: 0 30%;
+  margin: 0 30% 5% 30%;
 
   img {
     width: 100%;
@@ -28,50 +28,50 @@ a {
 
 
 .contact-rectangles {
-  display: flex;
   flex-flow: column;
   position: relative;
+  align-items: center;
 
   font: 50px "made_miragethin",
     Georgia,
     serif;
 
-  z-index: 10;
+  z-index: 20;
 
 
-  p {
-    border: solid 1px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  span {
+    border: solid 1px $main-text-color;
     text-align: center;
+    padding: 15px 20px;
   }
-
+ div {
+   margin-bottom: 40px;
+ }
 
   .seperator {
     align-self: center;
   }
 
   .email-me {
-    p {
-      padding: 5px 5%;
+    span {
       background-color: $main-pink;
     }
   }
 
   .link-me {
-    p {
+    span {
       background-color: $main-blue;
     }
   }
 
   .instagram-me {
-    p {
+    span {
       background-color: $main-peach;
     }
   }
 
   .connect-me {
-    p {
+    span {
       background-color: $main-green;
     }
   }
@@ -90,7 +90,7 @@ a {
   }
 
   position: relative;
-  margin-top:-200px;
+  margin-top:-150px;
   margin-bottom: 100px;
-  z-index: 20;
+  z-index: 10;
 }
