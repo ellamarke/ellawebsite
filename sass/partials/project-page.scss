@@ -239,6 +239,11 @@ a {
   grid-column-end: 10;
 }
 
+.medium-right-img-2 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
 .large-right-img {
   grid-column-start: 7;
   grid-column-end: 12;
@@ -259,6 +264,11 @@ a {
   grid-column-end: 7;
 }
 
+.medium-left-img-2 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
 .large-left-img {
   grid-column-start: 2;
   grid-column-end: 7;
@@ -266,6 +276,10 @@ a {
 
 .top-margin {
   margin-top: 20%;
+}
+
+.top-margin-large {
+  margin-top: 40%;
 }
 
 

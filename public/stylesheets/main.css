@@ -146,8 +146,8 @@ h6 {
   position: relative; }
   .picture-frame img {
     width: 100%; }
-  .picture-frame img.roundel {
-    width: 9em; }
+  .picture-frame img.roundel, .picture-frame img.roundel-right {
+    width: 8em; }
 
 .portrait {
   border: solid 1px;
@@ -164,9 +164,9 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 /* Left side roundel */
 .roundel {
   position: absolute;
-  top: -4.5em;
-  left: -4.5em;
-  width: 9em;
+  top: -4em;
+  left: -4em;
+  width: 8em;
   animation: spin 10s linear infinite; }
 
 @keyframes spin {
@@ -178,9 +178,9 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 /* Right side roundel */
 .roundel-right {
   position: absolute;
-  top: -4.5em;
-  left: -4.5em;
-  width: 9em;
+  top: -4em;
+  right: -4em;
+  width: 8em;
   animation: spin 10s linear infinite; }
 
 /* Horizontal Rule */
@@ -558,6 +558,10 @@ a {
   grid-column-start: 6;
   grid-column-end: 10; }
 
+.medium-right-img-2 {
+  grid-column-start: 7;
+  grid-column-end: 11; }
+
 .large-right-img {
   grid-column-start: 7;
   grid-column-end: 12; }
@@ -574,12 +578,19 @@ a {
   grid-column-start: 3;
   grid-column-end: 7; }
 
+.medium-left-img-2 {
+  grid-column-start: 2;
+  grid-column-end: 6; }
+
 .large-left-img {
   grid-column-start: 2;
   grid-column-end: 7; }
 
 .top-margin {
   margin-top: 20%; }
+
+.top-margin-large {
+  margin-top: 40%; }
 
 /* text */
 .caption {
@@ -934,7 +945,8 @@ a {
     margin: 40px 40px 40px 30%; }
   .small-left-img {
     margin: 40px 30% 40px 40px; }
-  .medium-left-img {
+  .medium-left-img,
+  .medium-left-img-2 {
     margin: 40px 30% 40px 40px; }
   .large-left-img {
     margin: 40px 30% 40px 40px; }
@@ -1000,5 +1012,9 @@ a {
     width: 6em;
     top: -3em;
     left: -3em; }
+  .picture-frame img.roundel-right {
+    width: 6em;
+    top: -3em;
+    right: -3em; }
   .necklace {
     margin-top: -40px; } }

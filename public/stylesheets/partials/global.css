@@ -146,8 +146,8 @@ h6 {
   position: relative; }
   .picture-frame img {
     width: 100%; }
-  .picture-frame img.roundel {
-    width: 9em; }
+  .picture-frame img.roundel, .picture-frame img.roundel-right {
+    width: 8em; }
 
 .portrait {
   border: solid 1px;
@@ -164,9 +164,9 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 /* Left side roundel */
 .roundel {
   position: absolute;
-  top: -4.5em;
-  left: -4.5em;
-  width: 9em;
+  top: -4em;
+  left: -4em;
+  width: 8em;
   animation: spin 10s linear infinite; }
 
 @keyframes spin {
@@ -178,9 +178,9 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 /* Right side roundel */
 .roundel-right {
   position: absolute;
-  top: -4.5em;
-  left: -4.5em;
-  width: 9em;
+  top: -4em;
+  right: -4em;
+  width: 8em;
   animation: spin 10s linear infinite; }
 
 /* Horizontal Rule */

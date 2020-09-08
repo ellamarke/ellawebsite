@@ -113,8 +113,8 @@
     width: 100%;
   }
 
-  img.roundel {
-    width: 9em;
+  img.roundel, img.roundel-right {
+    width: 8em;
   }
 }
 
@@ -142,9 +142,9 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 
 .roundel {
   position: absolute;
-  top: -4.5em;
-  left: -4.5em;
-  width: 9em;
+  top: -4em;
+  left: -4em;
+  width: 8em;
   animation: spin 10s linear infinite;
 }
 
@@ -163,9 +163,9 @@ https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20
 
 .roundel-right {
   position: absolute;
-  top: -4.5em;
-  left: -4.5em;
-  width: 9em;
+  top: -4em;
+  right: -4em;
+  width: 8em;
   animation: spin 10s linear infinite;
 }
 

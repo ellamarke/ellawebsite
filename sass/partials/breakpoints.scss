@@ -147,9 +147,11 @@
     margin: 40px 30% 40px 40px;
   }
   
-  .medium-left-img {
+  .medium-left-img,
+  .medium-left-img-2 {
     margin: 40px 30% 40px 40px;
   }
+
   
   .large-left-img {
     margin: 40px 30% 40px 40px;
@@ -265,6 +267,12 @@
       width: 6em;
       top: -3em;
       left: -3em;
+    }
+
+    img.roundel-right {
+      width: 6em;
+      top: -3em;
+      right: -3em;
     }
   }
 
