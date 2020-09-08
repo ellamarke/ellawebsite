@@ -26,6 +26,18 @@ router.get('/sally-clarke', function(req, res, next) {
   res.render('sally-clarke')
 })
 
+router.get('/nuns', function(req, res, next) {
+  res.render('nuns')
+})
+
+router.get('/anti-racism', function(req, res, next) {
+  res.render('anti-racism')
+})
+
+router.get('/mixing-bowl', function(req, res, next) {
+  res.render('mixing-bowl')
+})
+
 router.get('/grid-test', function(req, res, next) {
   res.render('grid-test')
 })

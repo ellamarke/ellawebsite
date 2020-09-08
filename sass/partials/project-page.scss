@@ -155,7 +155,6 @@ a {
 }
 
 .thanks-back {
-  grid-row-start: 10;
   grid-column-start: 3;
   grid-column-end: 11;
   display: flex;
@@ -244,6 +243,11 @@ a {
   grid-column-end: 11;
 }
 
+.medium-right-img-3 {
+  grid-column-start: 8;
+  grid-column-end: 12;
+}
+
 .large-right-img {
   grid-column-start: 7;
   grid-column-end: 12;
@@ -295,6 +299,17 @@ a {
   grid-column-start: 3;
   grid-column-end: 11;
 }
+
+.numbered-caption-left {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.numbered-caption-right {
+  grid-column-start: 8;
+  grid-column-end: 12;
+}
+
 
 
 /* photo grid */ 

@@ -10,6 +10,13 @@ body {
   background-color: #ebd5c4;
   margin: 0; }
 
+/* || LINKS */
+td a {
+  font-weight: 600; }
+
+td a:hover {
+  color: #f79b83; }
+
 /* || fonts */
 p {
   font: 18px "degular", Helvetica, Arial, sans-serif;

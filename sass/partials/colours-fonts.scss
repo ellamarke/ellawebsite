@@ -24,6 +24,17 @@ body {
   margin: 0;
 }
 
+/* || LINKS */
+td {
+  a {
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: $main-peach;
+  }
+}
+
 /* || fonts */
 
 p {
