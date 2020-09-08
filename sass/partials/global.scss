@@ -130,10 +130,7 @@
   }
 }
 
-figcaption {
-  font: 16px "degular", Helvetica, Arial, sans-serif;
-  margin-top: 10px;
-}
+
 
 
 /* ROUNDELS */
@@ -184,5 +181,14 @@ hr {
 .seperator {
   border-left: 1px solid;
   height: 100px;
+}
+
+
+.centre {
+  display: flex;
+  flex-direction: column;
+  div {
+    align-self: center;
+  }
 }
 

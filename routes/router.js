@@ -22,6 +22,10 @@ router.get('/food-of-paradise', function(req, res, next) {
   res.render('food-of-paradise')
 })
 
+router.get('/sally-clarke', function(req, res, next) {
+  res.render('sally-clarke')
+})
+
 router.get('/grid-test', function(req, res, next) {
   res.render('grid-test')
 })

@@ -75,6 +75,12 @@ a {
   grid-column-end: 10;
 }
 
+.img-1-large {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
 .double-caption-1 {
   grid-row-start: 2;
   grid-column-start: 5;
@@ -88,13 +94,6 @@ a {
   margin-bottom: 20px;
 }
 
-.centre {
-  display: flex;
-  flex-direction: column;
-  div {
-    align-self: center;
-  }
-}
 
 .quote-1 {
   grid-row-start: 3;
@@ -167,5 +166,155 @@ a {
   align-self: center;
   p {
     padding: 5px 30px;
+  }
+}
+
+
+
+
+/* || ROWS */ 
+
+.row-1 {
+  grid-row-start: 1;
+}
+
+.row-2 {
+  grid-row-start: 2;
+}
+
+.row-3 {
+  grid-row-start: 3;
+}
+
+.row-4 {
+  grid-row-start: 4;
+}
+
+.row-5 {
+  grid-row-start: 5;
+}
+
+.row-6 {
+  grid-row-start: 6;
+}
+
+.row-7 {
+  grid-row-start: 7;
+}
+
+.row-8 {
+  grid-row-start: 8;
+}
+
+.row-9 {
+  grid-row-start: 9;
+}
+
+.row-10 {
+  grid-row-start: 10;
+}
+
+
+/* || CONTENT TYPES */ 
+
+/* images */
+
+.centre-img {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.centre-img-large {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.small-right-img {
+  grid-column-start: 8;
+  grid-column-end: 11;
+}
+
+.medium-right-img {
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+
+.large-right-img {
+  grid-column-start: 7;
+  grid-column-end: 12;
+}
+
+.extra-large-right-img {
+  grid-column-start: 6;
+  grid-column-end: 12;
+}
+
+.small-left-img {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.medium-left-img {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.large-left-img {
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+
+.top-margin {
+  margin-top: 20%;
+}
+
+
+
+/* text */
+
+.caption {
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.quote {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+
+/* photo grid */ 
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  padding: 0;
+  margin: 0 10%;
+}
+
+.photo-grid-column {
+  max-width: 46%;
+  padding: 0 2%;
+}
+
+.photo-grid-column img {
+  margin: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photo-grid-column .picture-frame {
+  margin-top: 10%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photo-grid-column {
+    flex: 100%;
+    max-width: 100%;
   }
 }

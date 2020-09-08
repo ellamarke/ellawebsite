@@ -9,11 +9,33 @@
     grid-column-end: 11;
   }
 
-  .special-caption {
+  .button-position {
     grid-row-start: 3;
     grid-column-start: 3;
     grid-column-end: 11;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
 
+  .button {
+    align-self: center;
+    margin: 0;
+    p {
+      border: solid 1px;
+      background-color: $main-pink;
+      font: inherit;
+      padding: 5px 30px;
+    }
+  
+    font: 18px "wedding-gothic-atf";
+  }
+  
+  .button:hover {
+    P {
+      background-color: $main-green;
+    }
   }
 }
 

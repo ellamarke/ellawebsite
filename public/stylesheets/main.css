@@ -15,6 +15,10 @@ p {
   font: 18px "degular", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px; }
+
 /* PAGE TITLES */
 h1 {
   font: 120px "made_miragethin", Georgia, serif;
@@ -24,6 +28,9 @@ h1 {
   margin-top: 15px;
   text-align: center;
   line-height: 0.9; }
+
+.title-more-leading {
+  line-height: 1.1; }
 
 /* TICKER TAPE */
 h2,
@@ -151,10 +158,6 @@ h6 {
   .portrait img {
     width: 100%; }
 
-figcaption {
-  font: 16px "degular", Helvetica, Arial, sans-serif;
-  margin-top: 10px; }
-
 /* ROUNDELS */
 /* codexworld.com/how-to/position-place-image-over-image-css/
 https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20to%20an%20element%20using%20the%20animation%20property.&text=spin%20is%20the%20name%20of,and%20to%20repeat%20it%20infinitely. */
@@ -191,6 +194,12 @@ hr {
   border-left: 1px solid;
   height: 100px; }
 
+.centre {
+  display: flex;
+  flex-direction: column; }
+  .centre div {
+    align-self: center; }
+
 @font-face {
   font-family: 'made_miragethin';
   src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
@@ -208,6 +217,10 @@ p {
   font: 18px "degular", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px; }
+
 /* PAGE TITLES */
 h1 {
   font: 120px "made_miragethin", Georgia, serif;
@@ -217,6 +230,9 @@ h1 {
   margin-top: 15px;
   text-align: center;
   line-height: 0.9; }
+
+.title-more-leading {
+  line-height: 1.1; }
 
 /* TICKER TAPE */
 h2,
@@ -416,6 +432,11 @@ a {
   grid-column-start: 4;
   grid-column-end: 10; }
 
+.img-1-large {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 11; }
+
 .double-caption-1 {
   grid-row-start: 2;
   grid-column-start: 5;
@@ -426,12 +447,6 @@ a {
   height: 100px;
   margin-top: 20px;
   margin-bottom: 20px; }
-
-.centre {
-  display: flex;
-  flex-direction: column; }
-  .centre div {
-    align-self: center; }
 
 .quote-1 {
   grid-row-start: 3;
@@ -493,6 +508,116 @@ a {
   align-self: center; }
   .go-back p {
     padding: 5px 30px; }
+
+/* || ROWS */
+.row-1 {
+  grid-row-start: 1; }
+
+.row-2 {
+  grid-row-start: 2; }
+
+.row-3 {
+  grid-row-start: 3; }
+
+.row-4 {
+  grid-row-start: 4; }
+
+.row-5 {
+  grid-row-start: 5; }
+
+.row-6 {
+  grid-row-start: 6; }
+
+.row-7 {
+  grid-row-start: 7; }
+
+.row-8 {
+  grid-row-start: 8; }
+
+.row-9 {
+  grid-row-start: 9; }
+
+.row-10 {
+  grid-row-start: 10; }
+
+/* || CONTENT TYPES */
+/* images */
+.centre-img {
+  grid-column-start: 4;
+  grid-column-end: 10; }
+
+.centre-img-large {
+  grid-column-start: 3;
+  grid-column-end: 11; }
+
+.small-right-img {
+  grid-column-start: 8;
+  grid-column-end: 11; }
+
+.medium-right-img {
+  grid-column-start: 6;
+  grid-column-end: 10; }
+
+.large-right-img {
+  grid-column-start: 7;
+  grid-column-end: 12; }
+
+.extra-large-right-img {
+  grid-column-start: 6;
+  grid-column-end: 12; }
+
+.small-left-img {
+  grid-column-start: 2;
+  grid-column-end: 5; }
+
+.medium-left-img {
+  grid-column-start: 3;
+  grid-column-end: 7; }
+
+.large-left-img {
+  grid-column-start: 2;
+  grid-column-end: 7; }
+
+.top-margin {
+  margin-top: 20%; }
+
+/* text */
+.caption {
+  grid-column-start: 5;
+  grid-column-end: 9; }
+
+.quote {
+  grid-column-start: 3;
+  grid-column-end: 11; }
+
+/* photo grid */
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  padding: 0;
+  margin: 0 10%; }
+
+.photo-grid-column {
+  max-width: 46%;
+  padding: 0 2%; }
+
+.photo-grid-column img {
+  margin: 0px;
+  vertical-align: middle;
+  width: 100%; }
+
+.photo-grid-column .picture-frame {
+  margin-top: 10%;
+  vertical-align: middle;
+  width: 100%; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photo-grid-column {
+    flex: 100%;
+    max-width: 100%; } }
 
 a {
   color: #353532;
@@ -578,10 +703,26 @@ a {
   grid-column-start: 3;
   grid-column-end: 11; }
 
-.main-grid .special-caption {
+.main-grid .button-position {
   grid-row-start: 3;
   grid-column-start: 3;
-  grid-column-end: 11; }
+  grid-column-end: 11;
+  display: flex;
+  flex-direction: column;
+  margin: 0; }
+
+.main-grid .button {
+  align-self: center;
+  margin: 0;
+  font: 18px "wedding-gothic-atf"; }
+  .main-grid .button p {
+    border: solid 1px;
+    background-color: #e698c0;
+    font: inherit;
+    padding: 5px 30px; }
+
+.main-grid .button:hover P {
+  background-color: #9ace9f; }
 
 .testimonial-section {
   display: flex;
@@ -778,6 +919,31 @@ a {
     text-align: center; }
   figcaption {
     font-size: 14px; }
+  /* NEW LAYOUT SYSTEM */
+  .centre-img {
+    margin: 40px; }
+  .centre-img-large {
+    margin: 40px; }
+  .small-right-img {
+    margin: 40px 40px 40px 30%; }
+  .medium-right-img {
+    margin: 40px 40px 40px 30%; }
+  .large-right-img {
+    margin: 40px 40px 40px 30%; }
+  .extra-large-right-img {
+    margin: 40px 40px 40px 30%; }
+  .small-left-img {
+    margin: 40px 30% 40px 40px; }
+  .medium-left-img {
+    margin: 40px 30% 40px 40px; }
+  .large-left-img {
+    margin: 40px 30% 40px 40px; }
+  .top-margin {
+    margin-top: 20%; }
+  .photo-grid {
+    margin: 0; }
+  .photo-grid-column .picture-frame {
+    margin-top: 0; }
   /* || WORK (flex box) */
   .row {
     margin: 10px 5%;
@@ -822,6 +988,7 @@ a {
   .double-caption-2 {
     grid-column-start: 4;
     grid-column-end: 10; }
+  .caption,
   .caption-3,
   .caption-4,
   .home-caption-1,
