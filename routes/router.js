@@ -62,6 +62,22 @@ router.get('/brains', function(req, res, next) {
   res.render('brains')
 })
 
+router.get('/gif-suite', function(req, res, next) {
+  res.render('gif-suite')
+})
+
+router.get('/bike-theft', function(req, res, next) {
+  res.render('bike-theft')
+})
+
+router.get('/martins-dream', function(req, res, next) {
+  res.render('martins-dream')
+})
+
+router.get('/abeo', function(req, res, next) {
+  res.render('abeo')
+})
+
 router.get('/grid-test', function(req, res, next) {
   res.render('grid-test')
 })

@@ -351,3 +351,83 @@ a {
     max-width: 100%;
   }
 }
+
+/* photo grid */ 
+
+.photo-grid-4-col {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  padding: 0;
+  margin: 0 10%;
+}
+
+.photo-grid-4-col-column {
+  max-width: 21%;
+  padding: 0 2%;
+
+    .picture-frame {
+      border: none;
+    }
+
+}
+
+.photo-grid-4-col-column img {
+  margin: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photo-grid-4-col-column .picture-frame {
+  margin-top: 10%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photo-grid-4-col-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* photo grid */ 
+
+.photo-grid-4-col-borders {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  padding: 0;
+  margin: 0 10%;
+}
+
+.photo-grid-4-col-column-borders {
+  max-width: 21%;
+  padding: 0 2%;
+
+
+}
+
+.photo-grid-4-col-column img {
+  margin: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photo-grid-4-col-column-borders .picture-frame {
+  margin-top: 10%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photo-grid-4-col-column-borders {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
