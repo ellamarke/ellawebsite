@@ -609,6 +609,9 @@ a {
 .top-margin-large {
   margin-top: 40%; }
 
+.bottom-margin {
+  margin-bottom: 100px; }
+
 /* text */
 .caption {
   grid-column-start: 5;
@@ -1002,15 +1005,25 @@ a {
     margin-right: 100px;
     margin-left: 40px; }
   /* || WORK (flex box) */
-  .row {
+  .row, .photo-grid {
     margin: 10px 5%;
     margin-bottom: 10px; }
-    .row .roundel, .row .roundel-right {
+    .row .roundel,
+    .row .roundel-right, .photo-grid .roundel,
+    .photo-grid .roundel-right {
       display: none; }
-    .row .roundel-img {
+    .row .roundel-img, .photo-grid .roundel-img {
       margin: 0 0 0 0; }
   .work-sub-heading h6 {
     font-size: 55px; }
+  /* || ABOUT */
+  .testimonial {
+    margin: 30px 10%; }
+    .testimonial .client-name,
+    .testimonial .company-name {
+      font-size: 25px; }
+    .testimonial td {
+      padding: 20px 30px; }
   /* || FOOTER */
   ul {
     margin: 0; }

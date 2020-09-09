@@ -38,6 +38,15 @@ router.get('/mixing-bowl', function(req, res, next) {
   res.render('mixing-bowl')
 })
 
+router.get('/student-survey', function(req, res, next) {
+  res.render('student-survey')
+})
+
+router.get('/okra', function(req, res, next) {
+  res.render('okra')
+})
+
+
 router.get('/grid-test', function(req, res, next) {
   res.render('grid-test')
 })

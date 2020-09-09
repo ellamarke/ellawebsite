@@ -75,7 +75,7 @@
     margin-left: 120px;
   }
 
-  */ 
+  */
 
   .double-caption {
     margin: 0;
@@ -120,7 +120,7 @@
   }
 
 
-  /* NEW LAYOUT SYSTEM */ 
+  /* NEW LAYOUT SYSTEM */
 
   .centre-img {
     margin: 40px;
@@ -131,27 +131,27 @@
   }
 
   .small-right-img {
-   margin: 40px 40px 40px 30%;
+    margin: 40px 40px 40px 30%;
   }
-  
+
   .medium-right-img,
   .medium-right-img-2,
   .medium-right-img-3 {
     margin: 40px 40px 40px 30%;
   }
-  
+
   .large-right-img {
     margin: 40px 40px 40px 30%;
   }
-  
+
   .extra-large-right-img {
     margin: 40px 40px 40px 30%;
   }
-  
+
   .small-left-img {
     margin: 40px 30% 40px 40px;
   }
-  
+
   .medium-left-img,
   .medium-left-img-2,
   .medium-left-img-3 {
@@ -161,7 +161,7 @@
   .large-left-img {
     margin: 40px 30% 40px 40px;
   }
-  
+
   .top-margin {
     margin-top: 20%;
   }
@@ -187,11 +187,12 @@
 
   /* || WORK (flex box) */
 
-  .row {
+  .row, .photo-grid {
     margin: 10px 5%;
     margin-bottom: 10px;
 
-    .roundel, .roundel-right {
+    .roundel,
+    .roundel-right {
       display: none;
     }
 
@@ -204,7 +205,23 @@
     font-size: 55px;
   }
 
- 
+
+  /* || ABOUT */
+
+  .testimonial {
+    margin: 30px 10%;
+
+    .client-name,
+    .company-name {
+      font-size: 25px;
+    }
+
+    td {
+      padding: 20px 30px;
+    }
+  }
+
+
 
   /* || FOOTER */
 
