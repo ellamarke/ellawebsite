@@ -46,6 +46,13 @@ router.get('/okra', function(req, res, next) {
   res.render('okra')
 })
 
+router.get('/odyssey', function(req, res, next) {
+  res.render('odyssey')
+})
+
+router.get('/leica', function(req, res, next) {
+  res.render('leica')
+})
 
 router.get('/grid-test', function(req, res, next) {
   res.render('grid-test')
