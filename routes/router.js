@@ -54,6 +54,14 @@ router.get('/leica', function(req, res, next) {
   res.render('leica')
 })
 
+router.get('/1984', function(req, res, next) {
+  res.render('1984')
+})
+
+router.get('/brains', function(req, res, next) {
+  res.render('brains')
+})
+
 router.get('/grid-test', function(req, res, next) {
   res.render('grid-test')
 })
