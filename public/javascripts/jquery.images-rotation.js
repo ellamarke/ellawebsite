@@ -9,7 +9,7 @@ $.fn.imagesRotation = function (options) {
             images: [],         // urls to images
             dataAttr: 'images', // html5 data- attribute which contains an array with urls to images
             imgSelector: 'img', // element to change
-            interval: 1000,     // ms
+            interval: 500,     // ms
             intervalFirst: 500, // first image change, ms
             callback: null      // first argument would be the current image url
         },

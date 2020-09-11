@@ -10,7 +10,7 @@
 </div>
 
 {{!-- MAIN CONTENT --}}
-
+{{!--image rotation code originally from https://github.com/sladex/images-rotation --}}
 <div class="main-grid">
 
     <table class="row-1 caption caption-table">
@@ -37,7 +37,7 @@
     <div class="row-2 medium-left-img-2">
         <div class="picture-frame">
             <a href="sally-clarke" class="images-rotation"
-                data-images='["/images/cropped/sally-clarke-stamps.jpg", "/images/cropped/leica1.jpg", "/images/cropped/nuns-poster.jpg"]'>
+                data-images='["/images/cropped/sally-clarke-stamps.jpg", "/images/sally-clarke-stickers.jpg", "/images/sally-clarke-telegram.jpg", "/images/sally-clarke-tiki.jpg"]'>
                 <img src="/images/cropped/sally-clarke-stamps.jpg" id="img-1"></img>
             </a>
         </div>
@@ -50,7 +50,10 @@
         <div class="img">
             <div class="picture-frame">
                 <img src="/images/roundels/hungry.svg" class="roundel-right"></img>
-                <a href="food-of-paradise"> <img src="/images/paradise-plantain-chips.jpg"></img></a>
+                <a href="food-of-paradise" class="images-rotation"
+                    data-images='["/images/transform/paradise-plantain-chips.jpg", "/images/transform/paradise-rice.jpg", "/images/transform/paradise-jar.jpg", "/images/transform/paradise-yassa.jpg", "/images/transform/paradise-sticker.jpg"]'>
+                    <img src="/images/transform/paradise-plantain-chips.jpg" id="img-1"></img>
+                </a>
             </div>
         </div>
     </div>
@@ -77,13 +80,19 @@
 
     <div class="row-4 medium-left-img-2 top-margin">
         <div class="picture-frame">
-            <a href="nuns"> <img src="/images/nuns-poster-main.jpg"></img></a>
+            <a href="nuns" class="images-rotation"
+                data-images='["/images/nuns-poster-main.jpg", "/images/transform/nuns-hands.jpg", "/images/transform/nuns-cross.jpg", "/images/transform/nuns-pray.jpg", "/images/transform/nuns-rose.jpg"]'>
+                <img src="/images/nuns-poster-main.jpg" id="img-1"></img>
+            </a>
         </div>
     </div>
 
     <div class="row-4 large-right-img">
         <div class="picture-frame">
-            <a href="mixing-bowl"> <img src="/images/mixing-bowl-book.jpg"></img></a>
+            <a href="mixing-bowl" class="images-rotation"
+                data-images='["/images/mixing-bowl-book.jpg", "/images/transform/mixing-bowl-letter.jpg", "/images/transform/mixing-bowl-laptop.jpg", "/images/transform/mixing-bowl-poster.jpg"]'>
+                <img src="/images/mixing-bowl-book.jpg" id="img-1"></img>
+            </a>
         </div>
     </div>
 
@@ -93,14 +102,20 @@
         <div class="img">
             <div class="picture-frame">
                 <img src="/images/roundels/yes-pink.svg" class="roundel-right"></img>
-                <a href="okra"> <img src="/images/okra-menu.jpg"></img></a>
+                <a href="okra" class="images-rotation"
+                data-images='["/images/okra-menu.jpg", "/images/transform/okra-bottle.jpg", "/images/transform/okra-letter.jpg", "/images/transform/okra-shirt.jpg", "/images/transform/okra-signage.jpg", "/images/transform/okra-notes.jpg"]'>
+                <img src="/images/okra-menu.jpg" id="img-1"></img>
+            </a>
             </div>
         </div>
     </div>
 
     <div class="row-5 medium-right-img-3">
         <div class="picture-frame">
-            <a href="leica"> <img src="/images/leica-vertical.jpg"></img> </a>
+            <a href="leica" class="images-rotation"
+                data-images='["/images/leica-vertical.jpg", "/images/transform/leica-2.jpg", "/images/transform/leica-3.jpg"]'>
+                <img src="/images/leica-vertical.jpg" id="img-1"></img>
+            </a>
         </div>
     </div>
 
