@@ -93,14 +93,26 @@ h6 {
 .content-menu.contact {
   border-left-color: #f79b83; }
 
+.content.contact {
+  border-right-color: #9ace9f; }
+
 .content-menu.about {
   border-left-color: #9ace9f; }
+
+.content.about {
+  border-right-color: #80bfc2; }
 
 .content-menu.work {
   border-left-color: #e698c0; }
 
+.content.work {
+  border-right-color: #f79b83; }
+
 .content-menu.home {
   border-left-color: #80bfc2; }
+
+.content.home {
+  border-right-color: #e698c0; }
 
 /* caption table */
 .caption-table {

@@ -23,16 +23,32 @@
   border-left-color: $main-peach;
 }
 
+.content.contact {
+  border-right-color: $main-green;
+}
+
 .content-menu.about {
   border-left-color: $main-green;
+}
+
+.content.about {
+  border-right-color: $main-blue;
 }
 
 .content-menu.work {
   border-left-color: $main-pink;
 }
 
+.content.work {
+  border-right-color: $main-peach;
+}
+
 .content-menu.home {
   border-left-color: $main-blue;
+}
+
+.content.home {
+  border-right-color: $main-pink;
 }
 
 
