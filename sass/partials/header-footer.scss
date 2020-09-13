@@ -40,25 +40,26 @@
   }
 
   .menu-home {
-    a:hover {
+    a:hover, a.active {
       background: $main-blue;
     }
+    
   }
 
   .menu-work {
-    a:hover {
+    a:hover, a.active{
       background: $main-pink;
     }
   }
 
   .menu-about {
-    a:hover {
+    a:hover, a.active {
       background: $main-green;
     }
   }
 
   .menu-contact {
-    a:hover {
+    a:hover, a.active {
       background: $main-peach;
     }
   }
@@ -85,6 +86,22 @@
   .content {
     border-left: solid 10px $main-blue;
   }
+  .content.contact {
+    border-left-color: $main-peach;
+  }
+ 
+  .content.about {
+    border-left-color: $main-green;
+  }
+  
+  .content.work {
+    border-left-color: $main-pink;
+  }
+
+  .content.home {
+    border-left-color: $main-blue;
+  }
+  
   .content-menu {
     border-left: none;
   }

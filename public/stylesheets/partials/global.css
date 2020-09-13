@@ -90,6 +90,18 @@ h6 {
 .content-menu {
   border-left: solid 10px #80bfc2; }
 
+.content-menu.contact {
+  border-left-color: #f79b83; }
+
+.content-menu.about {
+  border-left-color: #9ace9f; }
+
+.content-menu.work {
+  border-left-color: #e698c0; }
+
+.content-menu.home {
+  border-left-color: #80bfc2; }
+
 /* caption table */
 .caption-table {
   border-collapse: collapse; }
