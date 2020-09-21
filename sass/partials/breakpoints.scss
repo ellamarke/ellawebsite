@@ -34,6 +34,10 @@
     padding-bottom: 20px;
   }
 
+  .no-padding {
+    padding-bottom: 0;
+  }
+
   .sub-heading {
     margin: 20px 40px;
   }
@@ -187,7 +191,8 @@
 
   /* || WORK (flex box) */
 
-  .row, .photo-grid {
+  .row,
+  .photo-grid {
     margin: 10px 5%;
     margin-bottom: 10px;
 

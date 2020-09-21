@@ -16,6 +16,8 @@
     margin: 40px 20px; }
   .page-intro {
     padding-bottom: 20px; }
+  .no-padding {
+    padding-bottom: 0; }
   .sub-heading {
     margin: 20px 40px; }
   .project-table {
@@ -105,14 +107,17 @@
     margin-right: 100px;
     margin-left: 40px; }
   /* || WORK (flex box) */
-  .row, .photo-grid {
+  .row,
+  .photo-grid {
     margin: 10px 5%;
     margin-bottom: 10px; }
     .row .roundel,
-    .row .roundel-right, .photo-grid .roundel,
+    .row .roundel-right,
+    .photo-grid .roundel,
     .photo-grid .roundel-right {
       display: none; }
-    .row .roundel-img, .photo-grid .roundel-img {
+    .row .roundel-img,
+    .photo-grid .roundel-img {
       margin: 0 0 0 0; }
   .work-sub-heading h6 {
     font-size: 55px; }
