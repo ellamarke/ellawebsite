@@ -46,7 +46,7 @@
   justify-content: center;
 
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .testimonial-sub-heading {
@@ -96,4 +96,8 @@
 
 .testimonial-3 {
   background-color: $main-blue;
+}
+
+.testimonial-4 {
+  background-color: $main-peach;
 }

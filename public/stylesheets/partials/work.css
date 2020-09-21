@@ -28,7 +28,10 @@
 @media screen and (max-width: 800px) {
   .column {
     flex: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .play-grid {
+    padding-bottom: 40px;
+    margin-bottom: 0; } }
 
 /* OUTSIDE FLEX */
 .work-sub-heading {
