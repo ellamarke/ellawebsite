@@ -52,6 +52,11 @@
     margin: 0; }
   .caption-table {
     margin: 0 40px; }
+  .numbered-caption-left {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  .numbered-caption-right {
+    margin-bottom: 70px; }
   .roundel-img {
     margin: 0;
     top: 0%;
@@ -110,8 +115,10 @@
   /* || WORK (flex box) */
   .row,
   .photo-grid {
+    /*
     margin: 10px 5%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    */ }
     .row .roundel,
     .row .roundel-right,
     .photo-grid .roundel,

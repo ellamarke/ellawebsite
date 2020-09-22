@@ -6,26 +6,26 @@
 </ul>
 
 <script>
-$(function(){
-    if ($('.page-intro.about').length == 1) {
-        $('.menu-about a').addClass('active')
-         $('.content').addClass('about')
-        $('.content-menu').addClass('about')
-    }
-    else if ($('.page-intro.contact').length == 1) {
-        $('.menu-contact a').addClass('active')
-        $('.content').addClass('contact')
-        $('.content-menu').addClass('contact')
-    }
-    else if ($('.page-intro.home').length == 1) {
-        $('.menu-home a').addClass('active')
-         $('.content').addClass('home')
-        $('.content-menu').addClass('home')
-        
-    } else {
-        $('.menu-work a').addClass('active')
-         $('.content').addClass('work')
-        $('.content-menu').addClass('work')
-    }
-});
+    $(function () {
+        if ($('.page-intro.about').length == 1) {
+            $('.menu-about a').addClass('active')
+            $('.content').addClass('about')
+            $('.content-menu').addClass('about')
+        }
+        else if ($('.page-intro.contact').length == 1) {
+            $('.menu-contact a').addClass('active')
+            $('.content').addClass('contact')
+            $('.content-menu').addClass('contact')
+        }
+        else if ($('.page-intro.home').length == 1) {
+            $('.menu-home a').addClass('active')
+            $('.content').addClass('home')
+            $('.content-menu').addClass('home')
+
+        } else {
+            $('.menu-work a').addClass('active')
+            $('.content').addClass('work')
+            $('.content-menu').addClass('work')
+        }
+    });
 </script>
