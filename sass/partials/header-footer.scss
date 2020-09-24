@@ -1,12 +1,36 @@
 /* ticker tape */
 
-.ticker-tape {
-  white-space: nowrap;
-  border-bottom: solid 1px $main-text-color;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-  overflow: hidden;
-  margin-top: 10px;
+.ticker-parent {
+
+  .ticker-tape {
+    white-space: nowrap;
+    border-bottom: solid 1px $main-text-color;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    margin-top: 10px;
+    
+    .ticker-list {
+      animation: ticker 20s infinite linear;
+    }
+      
+  }
+  
+}
+
+
+@-webkit-keyframes ticker {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
 
 /* || header */
