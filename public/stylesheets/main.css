@@ -309,6 +309,7 @@ h6 {
   letter-spacing: 0.03em; }
 
 /* ticker tape */
+/* animation adapted from https://omsom.com/ */
 .ticker-parent .ticker-tape {
   white-space: nowrap;
   border-bottom: solid 1px #353532;
@@ -1043,24 +1044,6 @@ a {
   .quote {
     font-size: 50px;
     margin: 70px 40px; }
-  /* 
-  .img {
-    margin: 80px 40px;
-  }
-
-  .img-3 {
-    margin-right: 120px;
-  }
-
-  .img-5 {
-    margin-right: 120px;
-  }
-
-  .img-6 {
-    margin-left: 120px;
-  }
-
-  */
   .double-caption {
     margin: 0; }
   .caption-table {
@@ -1107,9 +1090,10 @@ a {
   .small-left-img {
     margin: 40px 30% 40px 40px; }
   .medium-left-img,
-  .medium-left-img-2,
   .medium-left-img-3 {
     margin: 40px 30% 40px 40px; }
+  .medium-left-img-2 {
+    margin: 40px 40px 40px 30%; }
   .large-left-img {
     margin: 40px 30% 40px 40px; }
   .top-margin {
