@@ -1010,7 +1010,7 @@ a {
 
 /* OUTSIDE FLEX */
 .work-sub-heading {
-  margin: 50px 70px;
+  margin: 50px 70px 100px 70px;
   text-align: left; }
 
 /* || PHONES */
