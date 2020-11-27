@@ -608,6 +608,10 @@ a {
   grid-column-start: 3;
   grid-column-end: 11; }
 
+.centre-img-extra-large {
+  grid-column-start: 2;
+  grid-column-end: 12; }
+
 .small-right-img {
   grid-column-start: 8;
   grid-column-end: 11; }

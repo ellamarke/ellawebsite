@@ -74,6 +74,10 @@ router.get('/martins-dream', function(req, res, next) {
   res.render('martins-dream')
 })
 
+router.get('/capsicum', function(req, res, next) {
+  res.render('capsicum')
+})
+
 router.get('/abeo', function(req, res, next) {
   res.render('abeo')
 })
