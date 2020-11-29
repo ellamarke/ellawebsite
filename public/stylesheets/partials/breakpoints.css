@@ -61,7 +61,8 @@
   /* NEW LAYOUT SYSTEM */
   .centre-img {
     margin: 40px; }
-  .centre-img-large {
+  .centre-img-large,
+  .centre-img-extra-large {
     margin: 40px; }
   .small-right-img {
     margin: 40px 40px 40px 30%; }
