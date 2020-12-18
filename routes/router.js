@@ -78,6 +78,10 @@ router.get('/capsicum', function(req, res, next) {
   res.render('capsicum')
 })
 
+router.get('/page-turn', function(req, res, next) {
+  res.render('page-turn')
+})
+
 router.get('/abeo', function(req, res, next) {
   res.render('abeo')
 })
