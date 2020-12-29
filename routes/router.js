@@ -82,6 +82,10 @@ router.get('/page-turn', function(req, res, next) {
   res.render('page-turn')
 })
 
+router.get('/lumi', function(req, res, next) {
+  res.render('lumi')
+})
+
 router.get('/abeo', function(req, res, next) {
   res.render('abeo')
 })

@@ -176,7 +176,9 @@ h6 {
   box-sizing: border-box;
   position: relative; }
   .picture-frame img, .picture-frame video {
-    width: 100%; }
+    width: 100%;
+    vertical-align: bottom;
+    /* removes mystery gap under some images */ }
   .picture-frame img.roundel, .picture-frame img.roundel-right {
     width: 8em; }
 

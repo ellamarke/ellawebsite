@@ -144,6 +144,7 @@
 
   img, video {
     width: 100%;
+    vertical-align: bottom; /* removes mystery gap under some images */
   }
 
   img.roundel, img.roundel-right {

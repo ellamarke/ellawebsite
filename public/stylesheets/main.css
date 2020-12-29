@@ -176,7 +176,9 @@ h6 {
   box-sizing: border-box;
   position: relative; }
   .picture-frame img, .picture-frame video {
-    width: 100%; }
+    width: 100%;
+    vertical-align: bottom;
+    /* removes mystery gap under some images */ }
   .picture-frame img.roundel, .picture-frame img.roundel-right {
     width: 8em; }
 
@@ -616,6 +618,10 @@ a {
   grid-column-start: 8;
   grid-column-end: 11; }
 
+.small-right-img-2 {
+  grid-column-start: 9;
+  grid-column-end: 12; }
+
 .medium-right-img {
   grid-column-start: 6;
   grid-column-end: 10; }
@@ -651,6 +657,10 @@ a {
 .large-left-img {
   grid-column-start: 2;
   grid-column-end: 7; }
+
+.extra-large-left-img {
+  grid-column-start: 2;
+  grid-column-end: 8; }
 
 .top-margin {
   margin-top: 20%; }
@@ -1083,7 +1093,8 @@ a {
   .centre-img-large,
   .centre-img-extra-large {
     margin: 40px; }
-  .small-right-img {
+  .small-right-img,
+  .small-right-img-2 {
     margin: 40px 40px 40px 30%; }
   .medium-right-img,
   .medium-right-img-2,
@@ -1096,7 +1107,8 @@ a {
   .small-left-img {
     margin: 40px 30% 40px 40px; }
   .medium-left-img,
-  .medium-left-img-3 {
+  .medium-left-img-3,
+  .extra-large-left-img {
     margin: 40px 30% 40px 40px; }
   .medium-left-img-2 {
     margin: 40px 40px 40px 30%; }
