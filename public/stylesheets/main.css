@@ -1091,29 +1091,60 @@ a {
   .centre-img {
     margin: 40px; }
   .centre-img-large,
-  .centre-img-extra-large {
+  .centre-img-extra-large,
+  .small-right-img,
+  .small-right-img-2,
+  .medium-right-img,
+  .medium-right-img-2,
+  .medium-right-img-3,
+  .large-right-img,
+  .extra-large-right-img,
+  .small-left-img,
+  .medium-left-img,
+  .medium-left-img-3,
+  .extra-large-left-img,
+  .medium-left-img-2,
+  .large-left-img {
     margin: 40px; }
+  /*
   .small-right-img,
   .small-right-img-2 {
-    margin: 40px 40px 40px 30%; }
+    margin: 40px 40px 40px 30%;
+  }
+
   .medium-right-img,
   .medium-right-img-2,
   .medium-right-img-3 {
-    margin: 40px 40px 40px 30%; }
+    margin: 40px 40px 40px 30%;
+  }
+
   .large-right-img {
-    margin: 40px 40px 40px 30%; }
+    margin: 40px 40px 40px 30%;
+  }
+
   .extra-large-right-img {
-    margin: 40px 40px 40px 30%; }
+    margin: 40px 40px 40px 30%;
+  }
+
   .small-left-img {
-    margin: 40px 30% 40px 40px; }
+    margin: 40px 30% 40px 40px;
+  }
+
   .medium-left-img,
   .medium-left-img-3,
   .extra-large-left-img {
-    margin: 40px 30% 40px 40px; }
+    margin: 40px 30% 40px 40px;
+  }
+
   .medium-left-img-2 {
-    margin: 40px 40px 40px 30%; }
+   margin: 40px 40px 40px 30%;
+  }
+
   .large-left-img {
-    margin: 40px 30% 40px 40px; }
+    margin: 40px 30% 40px 40px;
+  }
+
+  */
   .top-margin {
     margin-top: 20%; }
   .photo-grid {
@@ -1128,20 +1159,14 @@ a {
     margin-right: 100px;
     margin-left: 40px; }
   /* || WORK (flex box) */
-  .row,
-  .photo-grid {
-    /*
-    margin: 10px 5%;
-    margin-bottom: 10px;
-    */ }
-    .row .roundel,
-    .row .roundel-right,
-    .photo-grid .roundel,
-    .photo-grid .roundel-right {
-      display: none; }
-    .row .roundel-img,
-    .photo-grid .roundel-img {
-      margin: 0 0 0 0; }
+  .row .roundel,
+  .row .roundel-right,
+  .photo-grid .roundel,
+  .photo-grid .roundel-right {
+    display: none; }
+  .row .roundel-img,
+  .photo-grid .roundel-img {
+    margin: 0 0 0 0; }
   .work-sub-heading h6 {
     font-size: 55px; }
   /* || ABOUT */
