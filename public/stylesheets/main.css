@@ -1106,7 +1106,7 @@ a {
   .medium-left-img-2,
   .large-left-img {
     margin: 40px; }
-  /*
+  /* more dynamic layout -- breakpoint images not centralised
   .small-right-img,
   .small-right-img-2 {
     margin: 40px 40px 40px 30%;
