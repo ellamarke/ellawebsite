@@ -1,0 +1,332 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+/* text highlight */
+::-moz-selection {
+  background: #f79b83;
+}
+::selection {
+  background: #f79b83;
+}
+
+::-moz-selection {
+  background: #f79b83;
+  /* Gecko Browsers */
+}
+
+/* main colour borders */
+.content {
+  border-right: solid 10px #e698c0;
+}
+
+.content-menu {
+  border-left: solid 10px #80bfc2;
+}
+
+.content-menu.contact {
+  border-left-color: #f79b83;
+}
+
+.content.contact {
+  border-right-color: #9ace9f;
+}
+
+.content-menu.about {
+  border-left-color: #9ace9f;
+}
+
+.content.about {
+  border-right-color: #80bfc2;
+}
+
+.content-menu.work {
+  border-left-color: #e698c0;
+}
+
+.content.work {
+  border-right-color: #f79b83;
+}
+
+.content-menu.home {
+  border-left-color: #80bfc2;
+}
+
+.content.home {
+  border-right-color: #e698c0;
+}
+
+/* caption table */
+.caption-table {
+  border-collapse: collapse;
+}
+
+.caption-table .main-head {
+  text-transform: uppercase;
+  font: 25px "made_miragethin", Georgia, serif;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+
+.caption-table .number-head {
+  text-transform: uppercase;
+  font: 14px "wedding-gothic-atf";
+  border: 1px solid;
+}
+
+.caption-table tbody {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.caption-table td,
+.caption-table th {
+  border: 1px solid;
+  padding: 10px 20px;
+}
+
+/* captions */
+.small-caption p {
+  border: solid 1px;
+  padding: 5%;
+}
+
+.special-caption {
+  font: 15px "wedding-gothic-atf";
+}
+
+.special-caption span {
+  border: solid 1px;
+  background-color: #e698c0;
+  font: inherit;
+  padding: 5px 30px;
+  margin-bottom: 40px;
+}
+
+/* page intro */
+.page-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.page-intro h1,
+.page-intro h3,
+.page-intro table,
+.page-intro .title-seperator {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.title-seperator {
+  border-left: 1px solid;
+  height: 100px;
+}
+
+.sub-heading {
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* images */
+.picture-frame {
+  border: solid 1px;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.picture-frame img, .picture-frame video {
+  width: 100%;
+  vertical-align: bottom;
+  /* removes mystery gap under some images */
+}
+
+.picture-frame img.roundel, .picture-frame img.roundel-right {
+  width: 8em;
+}
+
+.portrait {
+  border: solid 1px;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 47%;
+  border-top-right-radius: 47%;
+}
+
+.portrait img {
+  width: 100%;
+}
+
+/* ROUNDELS */
+/* codexworld.com/how-to/position-place-image-over-image-css/
+https://flaviocopes.com/css-animations/#:~:text=An%20animation%20is%20applied%20to%20an%20element%20using%20the%20animation%20property.&text=spin%20is%20the%20name%20of,and%20to%20repeat%20it%20infinitely. */
+/* Left side roundel */
+.roundel {
+  position: absolute;
+  top: -4em;
+  left: -4em;
+  width: 8em;
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+/* Right side roundel */
+.roundel-right {
+  position: absolute;
+  top: -4em;
+  right: -4em;
+  width: 8em;
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  height: 1px;
+  background: #353532;
+}
+
+/* General seperator */
+.seperator {
+  border-left: 1px solid;
+  height: 100px;
+}
+
+.centre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.centre div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=global.css.map */

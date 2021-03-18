@@ -168,6 +168,37 @@ a {
   }
 }
 
+/* || VIEW LIVE */
+
+.view-live {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 5;
+  grid-column-end: 9;
+
+  font: 40px "made_miragethin",
+    Georgia,
+    serif;
+
+  span {
+    border: solid 1px $main-text-color;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+
+  .view-live-button {
+    span {
+      background-color: $main-pink;
+    }
+    span:hover {
+      background-color: $main-peach;
+    }
+  }
+
+}
+
 
 
 
@@ -213,6 +244,25 @@ a {
   grid-row-start: 10;
 }
 
+.row-11 {
+  grid-row-start: 11;
+}
+
+.row-12 {
+  grid-row-start: 12;
+}
+
+.row-13 {
+  grid-row-start: 13;
+}
+
+.row-14 {
+  grid-row-start: 14;
+}
+
+.row-15 {
+  grid-row-start: 15;
+}
 
 /* || CONTENT TYPES */ 
 
