@@ -1,3 +1,80 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0; }
+
+/* || LINKS */
+td a {
+  font-weight: 600; }
+
+td a:hover {
+  color: #f79b83; }
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2; }
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px; }
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9; }
+
+.title-more-leading {
+  line-height: 1.1; }
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase; }
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1; }
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em; }
+
 /* || PHONES */
 @media only screen and (max-width: 768px) {
   /* || HOME */
@@ -77,45 +154,6 @@
   .medium-left-img-2,
   .large-left-img {
     margin: 40px; }
-  /* more dynamic layout -- breakpoint images not centralised
-  .small-right-img,
-  .small-right-img-2 {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .medium-right-img,
-  .medium-right-img-2,
-  .medium-right-img-3 {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .large-right-img {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .extra-large-right-img {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .small-left-img {
-    margin: 40px 30% 40px 40px;
-  }
-
-  .medium-left-img,
-  .medium-left-img-3,
-  .extra-large-left-img {
-    margin: 40px 30% 40px 40px;
-  }
-
-  .medium-left-img-2 {
-   margin: 40px 40px 40px 30%;
-  }
-
-  .large-left-img {
-    margin: 40px 30% 40px 40px;
-  }
-
-  */
   .top-margin {
     margin-top: 20%; }
   .photo-grid {
@@ -179,6 +217,13 @@
   .img-6 {
     grid-column-start: 7;
     grid-column-end: 12; } }
+
+@media only screen and (max-width: 1200px) {
+  .view-live {
+    flex-direction: column;
+    margin: 20px 0; }
+    .view-live .view-live-button, .view-live .github-button {
+      margin: 30px 0; } }
 
 /* || LARGE COMPUTER */
 @media only screen and (max-width: 1200px) {

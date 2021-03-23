@@ -1,3 +1,4 @@
+@import 'colours-fonts.scss';
 
 a {
   color: $main-text-color;
@@ -173,19 +174,19 @@ a {
 .view-live {
   display: flex;
   align-items: center;
-  justify-content: center;
-  grid-column-start: 5;
-  grid-column-end: 9;
-
-  font: 40px "made_miragethin",
-    Georgia,
-    serif;
+  justify-content: space-between;
+  grid-column-start: 4;
+  grid-column-end: 10;
 
   span {
     border: solid 1px $main-text-color;
     text-align: center;
     padding: 15px 20px;
   }
+
+  font: 30px "made_miragethin",
+  Georgia,
+  serif;
 
 
   .view-live-button {
@@ -194,6 +195,15 @@ a {
     }
     span:hover {
       background-color: $main-peach;
+    }
+  }
+
+  .github-button {
+    span {
+      background-color: $main-blue;
+    }
+    span:hover {
+      background-color: $main-green;
     }
   }
 
@@ -262,6 +272,14 @@ a {
 
 .row-15 {
   grid-row-start: 15;
+}
+
+.row-16 {
+  grid-row-start: 16;
+}
+
+.row-17 {
+  grid-row-start: 17;
 }
 
 /* || CONTENT TYPES */ 

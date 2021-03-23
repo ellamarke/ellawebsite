@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+a {
+  color: #353532;
+  text-decoration: none;
+}
+
+.page-intro .title {
+  margin-top: 50px;
+}
+
+/* main grid */
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.self-portrait {
+  margin: 0 30% 5% 30%;
+}
+
+.self-portrait img {
+  width: 100%;
+}
+
+.contact-rectangles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 50px "made_miragethin", Georgia, serif;
+  z-index: 20;
+}
+
+.contact-rectangles span {
+  border: solid 1px #353532;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.contact-rectangles div {
+  margin-bottom: 40px;
+}
+
+.contact-rectangles .seperator {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contact-rectangles .email-me span {
+  background-color: #e698c0;
+}
+
+.contact-rectangles .email-me span:hover {
+  background-color: #ebd5c4;
+}
+
+.contact-rectangles .link-me span {
+  background-color: #80bfc2;
+}
+
+.contact-rectangles .link-me span:hover {
+  background-color: #ebd5c4;
+}
+
+.contact-rectangles .instagram-me span {
+  background-color: #f79b83;
+}
+
+.contact-rectangles .instagram-me span:hover {
+  background-color: #ebd5c4;
+}
+
+.contact-rectangles .connect-me span {
+  background-color: #9ace9f;
+}
+
+.contact-rectangles .connect-me span:hover {
+  background-color: #ebd5c4;
+}
+
+.necklace {
+  position: relative;
+  margin-top: -150px;
+  margin-bottom: 100px;
+  z-index: 10;
+}
+
+.necklace img {
+  width: 100%;
+}
+/*# sourceMappingURL=contact.css.map */

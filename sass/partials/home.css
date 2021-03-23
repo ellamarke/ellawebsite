@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+a {
+  color: #353532;
+  text-decoration: none;
+}
+
+.page-intro .title {
+  margin-top: 50px;
+}
+
+/* main grid */
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5em 1em;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.home-caption-1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.home-img-1 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.home-img-2 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 12;
+  position: relative;
+  margin-top: 20%;
+}
+
+.home-caption-2 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.home-img-3 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 8;
+      grid-column-start: 8;
+  grid-column-end: 12;
+  position: relative;
+}
+
+.home-img-4 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 7;
+  position: relative;
+  margin-top: 20%;
+}
+
+.home-img-5 {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 12;
+  margin-top: 30%;
+}
+
+.home-img-6 {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.home-caption-3 {
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.see-work {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.see-work p {
+  padding: 5px 30px;
+}
+/*# sourceMappingURL=home.css.map */

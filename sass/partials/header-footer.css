@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+/* ticker tape */
+/* animation adapted from https://omsom.com/ */
+.ticker-parent .ticker-tape {
+  white-space: nowrap;
+  border-bottom: solid 1px #353532;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.ticker-parent .ticker-tape .ticker-list {
+  -webkit-animation: ticker 20s infinite linear;
+          animation: ticker 20s infinite linear;
+}
+
+@-webkit-keyframes ticker {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+/* || header */
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style: none;
+  margin: 0;
+  font-family: "degular";
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navigation li:last-of-type a {
+  border-right: solid 1px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  border-left: solid 1px;
+  border-right: none;
+  border-bottom: solid 1px;
+  padding: 10px 40px 10px 40px;
+}
+
+.navigation .menu-home a:hover, .navigation .menu-home a.active {
+  background: #80bfc2;
+}
+
+.navigation .menu-work a:hover, .navigation .menu-work a.active {
+  background: #e698c0;
+}
+
+.navigation .menu-about a:hover, .navigation .menu-about a.active {
+  background: #9ace9f;
+}
+
+.navigation .menu-contact a:hover, .navigation .menu-contact a.active {
+  background: #f79b83;
+}
+
+.navigation a:visited {
+  color: #353532;
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+  }
+  .navigation li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+  }
+  .navigation li a {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .content {
+    border-left: solid 10px #80bfc2;
+  }
+  .content.contact {
+    border-left-color: #f79b83;
+  }
+  .content.about {
+    border-left-color: #9ace9f;
+  }
+  .content.work {
+    border-left-color: #e698c0;
+  }
+  .content.home {
+    border-left-color: #80bfc2;
+  }
+  .content-menu {
+    border-left: none;
+  }
+}
+
+/* footer */
+.footer {
+  border-top: solid 1px;
+}
+
+.footer .lets-talk {
+  margin-top: 30px;
+}
+
+.footer .footer-roundel {
+  position: absolute;
+  top: -85%;
+  left: 72%;
+  width: 6em;
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+
+.footer .contact-table {
+  position: relative;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 30px;
+  font-family: "degular";
+  font-size: 30px;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.footer ul li:last-of-type a {
+  border-right: solid 1px;
+}
+
+.footer ul a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  border-left: solid 1px;
+  border-right: none;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  padding: 10px 35px 10px 35px;
+  color: #353532;
+}
+
+.footer ul .lets-talk {
+  text-align: left;
+}
+
+.footer ul .mail a:hover {
+  background: #80bfc2;
+}
+
+.footer ul .instagram a:hover {
+  background: #f79b83;
+}
+
+.footer ul .linkedin a:hover {
+  background: #9ace9f;
+}
+
+.footer .designed-by {
+  font: 15px "wedding-gothic-atf";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .designed-by p {
+  border: solid 1px;
+  background-color: #e698c0;
+  font: inherit;
+  padding: 5px 30px;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=header-footer.css.map */
