@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <title>Ella Marke | Designer &amp; Copywriter</title>
-  <link rel='stylesheet' href='/stylesheets/main.css?v=3' />
+  <title>Ella Marke | Designer &amp; Web Developer</title>
+  <link rel='stylesheet' href='/stylesheets/main.css?v=4' />
   <link rel="stylesheet" href="https://use.typekit.net/rwq8aci.css">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -34,19 +34,19 @@
       'iPhone',
       'iPod'
     ].includes(navigator.platform)
-    // iPad on iOS 13 detection
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+      // iPad on iOS 13 detection
+      || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
   }
   $(function () {
     if (!iOS()) {
-      $('.images-rotation').imagesRotation({interval: 700, intervalFirst: 200})
-      $('.images-rotation').mouseleave(function() {
-        var images = JSON.parse($(this ).attr("data-images"))
+      $('.images-rotation').imagesRotation({ interval: 700, intervalFirst: 200 })
+      $('.images-rotation').mouseleave(function () {
+        var images = JSON.parse($(this).attr("data-images"))
         if (images && images[0]) {
-          $( "img", this ).attr("src", images[0])
+          $("img", this).attr("src", images[0])
         }
       })
-      $('.images-rotation img').click(function() {
+      $('.images-rotation img').click(function () {
         $('.images-rotation').imagesRotationRemove()
       })
     }
