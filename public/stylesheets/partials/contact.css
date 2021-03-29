@@ -75,43 +75,61 @@ h6 {
   line-height: 1.1;
   letter-spacing: 0.03em; }
 
-/*  original flex code from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
-.no-padding {
-  padding-bottom: 0; }
+a {
+  color: #353532;
+  text-decoration: none; }
 
-/* FLEX */
-.row {
+.page-intro .title {
+  margin-top: 50px; }
+
+/* main grid */
+.main-content {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0 10%;
-  padding-bottom: 100px;
-  margin-top: -4.5em; }
+  flex-flow: row wrap;
+  justify-content: center; }
 
-.column {
-  max-width: 40%;
-  padding: 0 5%; }
+.self-portrait {
+  margin: 0 30% 5% 30%; }
+  .self-portrait img {
+    width: 100%; }
 
-.column img {
-  margin-top: 0px;
-  vertical-align: middle;
-  width: 100%; }
+.contact-rectangles {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font: 50px "made_miragethin", Georgia, serif;
+  z-index: 20; }
+  .contact-rectangles span {
+    border: solid 1px #353532;
+    text-align: center;
+    padding: 15px 20px; }
+  .contact-rectangles div {
+    margin-bottom: 40px; }
+  .contact-rectangles .seperator {
+    align-self: center; }
+  .contact-rectangles .email-me span {
+    background-color: #e698c0; }
+  .contact-rectangles .email-me span:hover {
+    background-color: #ebd5c4; }
+  .contact-rectangles .link-me span {
+    background-color: #80bfc2; }
+  .contact-rectangles .link-me span:hover {
+    background-color: #ebd5c4; }
+  .contact-rectangles .instagram-me span {
+    background-color: #f79b83; }
+  .contact-rectangles .instagram-me span:hover {
+    background-color: #ebd5c4; }
+  .contact-rectangles .connect-me span {
+    background-color: #9ace9f; }
+  .contact-rectangles .connect-me span:hover {
+    background-color: #ebd5c4; }
 
-.column .picture-frame {
-  margin-top: 100px;
-  vertical-align: middle;
-  width: 100%; }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 100%;
-    max-width: 100%; }
-  .play-grid {
-    padding-bottom: 40px;
-    margin-bottom: 0; } }
-
-/* OUTSIDE FLEX */
-.work-sub-heading {
-  margin: 50px 70px 100px 70px;
-  text-align: left; }
+.necklace {
+  position: relative;
+  margin-top: -150px;
+  margin-bottom: 100px;
+  z-index: 10; }
+  .necklace img {
+    width: 100%; }
