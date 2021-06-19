@@ -420,6 +420,96 @@ h6 {
   letter-spacing: 0.03em;
 }
 
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
 /* ticker tape */
 /* animation adapted from https://omsom.com/ */
 .ticker-parent .ticker-tape {
@@ -928,13 +1018,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 10;
-  font: 10px "made_miragethin", Georgia, serif;
+  font: 30px "made_miragethin", Georgia, serif;
 }
 
 .view-live span {
@@ -943,16 +1033,20 @@ a {
   padding: 15px 20px;
 }
 
-.view-live .view-live-button, .view-live .github-button {
-  font: 10px "made_miragethin", Georgia, serif;
-}
-
-.view-live .view-live-button span, .view-live .github-button span {
+.view-live .view-live-button span {
   background-color: #e698c0;
 }
 
-.view-live .view-live-button span:hover, .view-live .github-button span:hover {
+.view-live .view-live-button span:hover {
   background-color: #f79b83;
+}
+
+.view-live .github-button span {
+  background-color: #80bfc2;
+}
+
+.view-live .github-button span:hover {
+  background-color: #9ace9f;
 }
 
 /* || ROWS */
@@ -1029,6 +1123,16 @@ a {
 .row-15 {
   -ms-grid-row: 15;
       grid-row-start: 15;
+}
+
+.row-16 {
+  -ms-grid-row: 16;
+      grid-row-start: 16;
+}
+
+.row-17 {
+  -ms-grid-row: 17;
+      grid-row-start: 17;
 }
 
 /* || CONTENT TYPES */
@@ -1287,6 +1391,96 @@ a {
   }
 }
 
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
 a {
   color: #353532;
   text-decoration: none;
@@ -1405,6 +1599,96 @@ a {
 
 .see-work p {
   padding: 5px 30px;
+}
+
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 
 .main-grid .double-caption-1 {
@@ -1526,6 +1810,96 @@ a {
   background-color: #f79b83;
 }
 
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
 a {
   color: #353532;
   text-decoration: none;
@@ -1635,6 +2009,96 @@ a {
   width: 100%;
 }
 
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
 /*  original flex code from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 .no-padding {
   padding-bottom: 0;
@@ -1688,6 +2152,96 @@ a {
 .work-sub-heading {
   margin: 50px 70px 100px 70px;
   text-align: left;
+}
+
+@font-face {
+  font-family: 'made_miragethin';
+  src: url("/fonts/made_mirage_thin-webfont.woff2") format("woff2"), url("/fonts/made_mirage_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || colour variables */
+body {
+  color: #353532;
+  background-color: #ebd5c4;
+  margin: 0;
+}
+
+/* || LINKS */
+td a {
+  font-weight: 600;
+}
+
+td a:hover {
+  color: #f79b83;
+}
+
+/* || fonts */
+p {
+  font: 18px "degular", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+figcaption {
+  font: 14px "degular", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* PAGE TITLES */
+h1 {
+  font: 120px "made_miragethin", Georgia, serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-more-leading {
+  line-height: 1.1;
+}
+
+/* TICKER TAPE */
+h2,
+.ticker-tape {
+  font: 17px "wedding-gothic-atf";
+  text-transform: lowercase;
+}
+
+/* PAGE TITLE SUB-HEAD */
+h3 {
+  font: 30px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* THANKS BACK */
+h4 {
+  font: 50px "made_miragethin", Georgia, serif;
+  letter-spacing: 150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* QUOTE */
+h5 {
+  font: 100px "made_miragethin", Georgia, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h6 {
+  font: 50px "made_miragethin", Georgia, serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 
 /* || PHONES */
@@ -1792,45 +2346,6 @@ a {
   .large-left-img {
     margin: 40px;
   }
-  /* more dynamic layout -- breakpoint images not centralised
-  .small-right-img,
-  .small-right-img-2 {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .medium-right-img,
-  .medium-right-img-2,
-  .medium-right-img-3 {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .large-right-img {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .extra-large-right-img {
-    margin: 40px 40px 40px 30%;
-  }
-
-  .small-left-img {
-    margin: 40px 30% 40px 40px;
-  }
-
-  .medium-left-img,
-  .medium-left-img-3,
-  .extra-large-left-img {
-    margin: 40px 30% 40px 40px;
-  }
-
-  .medium-left-img-2 {
-   margin: 40px 40px 40px 30%;
-  }
-
-  .large-left-img {
-    margin: 40px 30% 40px 40px;
-  }
-
-  */
   .top-margin {
     margin-top: 20%;
   }
@@ -1918,6 +2433,19 @@ a {
     -ms-grid-column: 7;
         grid-column-start: 7;
     grid-column-end: 12;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .view-live {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  .view-live .view-live-button, .view-live .github-button {
+    margin: 30px 0;
   }
 }
 
